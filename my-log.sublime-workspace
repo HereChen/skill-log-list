@@ -1,0 +1,920 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"boder-",
+				"border-color"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"boder",
+				"border-radius"
+			],
+			[
+				"border",
+				"border-left"
+			],
+			[
+				"table",
+				"table-cell"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"font",
+				"font"
+			],
+			[
+				"A",
+				"Arial"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"counter",
+				"counter-increment"
+			],
+			[
+				"whi",
+				"width"
+			],
+			[
+				"f",
+				"foreach	ForEach"
+			],
+			[
+				"do",
+				"doSomthing"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"re",
+				"replaceChild"
+			],
+			[
+				"p",
+				"pElements"
+			],
+			[
+				"pr",
+				"paramOne"
+			],
+			[
+				"file",
+				"file_base_name"
+			],
+			[
+				"wr",
+				"write"
+			],
+			[
+				"entr",
+				"entry"
+			],
+			[
+				"entry",
+				"entry2"
+			],
+			[
+				"wri",
+				"writeheader"
+			],
+			[
+				"w",
+				"write"
+			],
+			[
+				"fun",
+				"function	function"
+			],
+			[
+				"e",
+				"email"
+			],
+			[
+				"str",
+				"string"
+			],
+			[
+				"Tec",
+				"Tecgraf"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"ar",
+				"article	Tag"
+			],
+			[
+				"d",
+				"div	Tag"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"fo",
+				"footer	Tag"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"b",
+				"bold"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"以",
+				"以列存取"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "ScilabLog.md",
+			"settings":
+			{
+				"buffer_size": 65,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"exten",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"bea",
+				"HTMLBeautify"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"pand",
+				"Pandoc"
+			],
+			[
+				"pan",
+				"Pandoc"
+			],
+			[
+				"read",
+				"ReadmePlease"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"reda	",
+				"ReadmePlease"
+			],
+			[
+				"latex",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Bookmarks: Select All"
+			],
+			[
+				"pa",
+				"Pandoc"
+			],
+			[
+				"pandoc",
+				"Pandoc"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"c#",
+				"Set Syntax: C#"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"prtty",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"mat",
+				"Set Syntax: MATLAB"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"lua",
+				"Set Syntax: Lua"
+			],
+			[
+				"ja",
+				"Snippet: Object Value JS"
+			],
+			[
+				"gis",
+				"Gist: Insert Gist"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"task",
+				"Tasks: Archive"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"co",
+				"Color Picker"
+			],
+			[
+				"colo",
+				"Color Picker"
+			],
+			[
+				"toc",
+				"MarkdownTOC:Update TOC"
+			],
+			[
+				"markdown",
+				"MarkdownEditing: Fix Underlined Headers"
+			],
+			[
+				"copy",
+				"File: Copy as Tag a"
+			],
+			[
+				"align",
+				"Preferences: Alignment File Settings – Default"
+			],
+			[
+				"select",
+				"BracketHighlighter: Select Bracket Content"
+			],
+			[
+				"titl",
+				"Convert Case: Title Case"
+			],
+			[
+				"matlab",
+				"Set Syntax: MATLAB"
+			],
+			[
+				"tsk",
+				"Tasks: Cancel"
+			],
+			[
+				"tsak",
+				"Tasks: Archive"
+			],
+			[
+				"open ",
+				"Gist: Open Gist"
+			],
+			[
+				"mar",
+				"Set Syntax: Markdown"
+			],
+			[
+				"snippet:html",
+				"Snippet: <?php echo htmlentities(…) ?>"
+			],
+			[
+				"xiki",
+				"Set Syntax: Xiki"
+			],
+			[
+				"makd",
+				"Set Syntax: Markdown"
+			],
+			[
+				"Lu",
+				"Set Syntax: Lua"
+			],
+			[
+				"cs",
+				"Set Syntax: CSS"
+			],
+			[
+				"r",
+				"Set Syntax: R"
+			],
+			[
+				"Markd",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"Mark",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"mo",
+				"Set Syntax: Markdown"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"sy",
+				"Set Syntax: Emmet"
+			],
+			[
+				"g",
+				"Package Control: Install Package"
+			],
+			[
+				"gi",
+				"Package Control: Install Package"
+			],
+			[
+				"u",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 576.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/baiducloud/Log/mytask.TODO",
+		"/C/Users/HereChen/Desktop/asd.md",
+		"/E/baiducloud/Log/mytask(HERECHEN-PC--HereChen--2014-05-30-23,15,43).TODO",
+		"/G/20140516.陈磊-STU/ReadMe.md",
+		"/E/baiducloud/Log/CSS3Log.md",
+		"/E/baiducloud/Log/CSSTipsLog.md",
+		"/E/baiducloud/Log/.gitconfig",
+		"/E/baiducloud/Log/emacsLog.txt",
+		"/E/baiducloud/Log/JavaScriptLog.md",
+		"/E/baiducloud/Log/linuxLog.txt",
+		"/E/baiducloud/Log/CssLog.md",
+		"/C/Users/HereChen/Desktop/try.html",
+		"/F/TutsPlus - CSS3 Essentials/4-Advanced Topics and Projects/20-Slider-Part-1.mov",
+		"/C/Program/SublimeText/changelog.txt",
+		"/E/baiducloud/Log/ScilabLog.md",
+		"/E/baiducloud/Log/Scilab.md",
+		"/C/Program/SublimeText/Data/Packages/User/Pandoc.sublime-settings",
+		"/C/Program/SublimeText/HereChenSublimeSettings.md",
+		"/C/Program/SublimeText/Data/Packages/LaTeX-cwl/Readme.md",
+		"/C/Program/SublimeText/Data/Packages/LaTeX Snippets/README.md",
+		"/C/Users/HereChen/Desktop/HereChenSublimeSettings.md",
+		"/C/Program/SublimeText/Data/Packages/Pandoc/Pandoc.sublime-settings",
+		"/E/baiducloud/Log/Plan.txt",
+		"/C/Program/SublimeText/Data/Packages/HTML-CSS-JS Prettify/Default (Windows).sublime-keymap",
+		"/C/Program/SublimeText/Data/Packages/PandocReferencr/PandocReferencr.sublime-settings",
+		"/C/Program/SublimeText/Data/Packages/PandocReferencr/Default.sublime-keymap",
+		"/C/Users/HereChen/Desktop/asda.js",
+		"/C/Program/SublimeText/Data/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/C/Program/SublimeText/Data/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Program/SublimeText/Data/Packages/JavaScript & NodeJS Snippets/README.md",
+		"/C/Users/HereChen/Desktop/TEMP/try.py",
+		"/C/Users/HereChen/Desktop/TSPchen.m",
+		"/C/Users/HereChen/Desktop/try.py",
+		"/I/20140516.陈磊/ReadMe.md",
+		"/E/360cloud/matlab_file/urlfile.html",
+		"/E/baiducloud/Log/PhotoshopLog.md",
+		"/E/baiducloud/Log/my-log.sublime-project",
+		"/E/360cloud/javascript/helloworld.js",
+		"/E/360cloud/javascript/lesson1.html",
+		"/C/Users/HereChen/Downloads/Hellokitty.torrent",
+		"/C/Users/HereChen/Desktop/oo.torrent",
+		"/C/Users/HereChen/Downloads/torrent/[kickass.to]tutsplus.book.layout.in.indesign.torrent",
+		"/C/Users/HereChen/Desktop/ba.py",
+		"/C/Users/HereChen/Desktop/here.py",
+		"/C/Users/HereChen/Desktop/trey.py",
+		"/I/ReadMe.md",
+		"/C/Program/SublimeText/Shortcuts.md",
+		"/E/highlight/styles/monokai_sublime.css",
+		"/E/highlight/styles/monokai.css",
+		"/E/360cloud/latex_file/TheWayMATLABLearning/my-matlablearning.sublime-project",
+		"/E/360cloud/latex_file/TheWayMATLABLearning/my-matlablearning.sublime-workspace",
+		"/C/Users/HereChen/Desktop/调用ga求解的例子0513/调用ga求解的例子0513/simple_fitness.m",
+		"/C/Users/HereChen/Desktop/调用ga求解的例子0513/调用ga求解的例子0513/simple_constraint.m",
+		"/C/Users/HereChen/Desktop/调用ga求解的例子0513/调用ga求解的例子0513/use_ga.m",
+		"/C/Users/HereChen/Desktop/wind_gatool0509.m",
+		"/C/Users/HereChen/Desktop/wind_ga0422.m",
+		"/C/Users/HereChen/Desktop/data.txt",
+		"/C/Users/HereChen/Desktop/TEMP/2014-05-11/FCMcs.m",
+		"/C/Users/HereChen/Desktop/TEMP/2014-05-11/FCM.m",
+		"/C/Users/HereChen/Desktop/FCMc.m",
+		"/C/Users/HereChen/Desktop/asdasd/hah.tex",
+		"/C/Program/SublimeText/Data/Packages/View In Browser/README.md",
+		"/C/Program/SublimeText/Data/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Program/SublimeText/Data/Packages/View In Browser/View In Browser.sublime-settings",
+		"/E/OneDrive/文档/account.bak",
+		"/E/baiducloud/Log/HTMLLog.md",
+		"/C/Program/SublimeText/Data/Packages/PlainTasks/PlainTasks (Windows).sublime-settings",
+		"/C/Program/SublimeText/Data/Packages/User/PlainTasks.sublime-settings",
+		"/C/Users/HereChen/Desktop/opcrossover.m",
+		"/C/Users/HereChen/Desktop/cross.m",
+		"/C/Users/HereChen/beamer-gentoo/README.md",
+		"/E/baiducloud/myself_document/人文写作/娶妻生子",
+		"/C/Users/HereChen/Desktop/functionimage.m",
+		"/C/Program/SublimeText/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Program/SublimeText/Data/Packages/PlainTasks/Default (Windows).sublime-keymap",
+		"/E/baiducloud/Log/sublimeLog.md",
+		"/C/Program/SublimeText/Data/Packages/C#/README.markdown",
+		"/E/baiducloud/Log/RubyLearnLog.txt",
+		"/E/baiducloud/Log/PATH_BACKUP",
+		"/E/baiducloud/Log/LuaLog.md",
+		"/C/Program/SublimeText/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/E/baiducloud/herechen.github.io/my-blog.sublime-project",
+		"/E/cad-english-sites-res/四川省制造业信息化研究院　西南交通大学CAD工程中心.htm",
+		"/C/Users/HereChen/Desktop/四川省制造业信息化研究院　西南交通大学CAD工程中心.htm",
+		"/C/Users/HereChen/Desktop/css.css",
+		"/C/Users/HereChen/Desktop/adew",
+		"/C/Program/SublimeText/Data/Packages/User/Markdown Extended.sublime-settings",
+		"/C/Program/SublimeText/Data/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/HereChen/Desktop/lua.lua",
+		"/C/Users/HereChen/Desktop/hello.c",
+		"/C/Program/SublimeText/Data/Packages/User/Lua.sublime-build",
+		"/C/Program/SublimeText/Data/Packages/User/C.sublime-build",
+		"/C/Program/SublimeText/Data/Packages/User/c.sublime-build",
+		"/E/baiducloud/herechen.github.io/.gitignore",
+		"/E/baiducloud/Log/sublimeLog(HERECHEN-PC--HereChen--2014-04-24-18,27,04).md",
+		"/C/Program/SublimeText/Data/Packages/MarkdownEditing/Bold and Italic Markers.tmPreferences",
+		"/E/baiducloud/Log/sublimeLog.html",
+		"/E/baiducloud/herechen.github.io/mytask.TODO",
+		"/C/Program/SublimeText/Data/Packages/Alignment/Default (Windows).sublime-keymap",
+		"/C/Program/SublimeText/Data/Packages/Terminal/Base File.sublime-settings",
+		"/E/baiducloud/herechen.github.io/_posts/2014-04-23-sublime-text-leaning-log.md",
+		"/C/Users/HereChen/Desktop/test.TODO",
+		"/E/baiducloud/herechen.github.io/_posts/2014-03-28-zhouguoping-Nietzsche-on-turning-point-of-century.md",
+		"/E/baiducloud/herechen.github.io/_posts/2014-03-08-Emacs-AUCTeX-installation-settings.md",
+		"/E/baiducloud/herechen.github.io/_site/zhouguoping-ren-yu-yong-heng/index.html",
+		"/C/Program/SublimeText/Data/Packages/User/Gist.sublime-settings",
+		"/C/Program/SublimeText/Data/Packages/Gist/Gist.sublime-settings",
+		"/E/baiducloud/herechen.github.io/CNAME",
+		"/E/baiducloud/herechen.github.io/blog_update_log.txt",
+		"/E/baiducloud/herechen.github.io/media/js/modernizr.custom.68193.js",
+		"/E/360cloud/latex_file/TheWayMATLABLearning/secSpiceHere.tex",
+		"/E/baiducloud/herechen.github.io/_site/kindle-clippings-export/index.html",
+		"/E/baiducloud/herechen.github.io/_site/jekyll-skills/index.html",
+		"/E/baiducloud/herechen.github.io/_site/guestbook/index.html",
+		"/E/baiducloud/herechen.github.io/_site/first-blog/index.html",
+		"/E/baiducloud/herechen.github.io/_site/feed/index.html",
+		"/E/baiducloud/herechen.github.io/_site/Emacs-AUCTeX-installation-settings/index.html",
+		"/E/baiducloud/herechen.github.io/_site/different-kindle-format-convert-pandoc/index.html",
+		"/E/baiducloud/herechen.github.io/_site/copy-a-string-to-the-clipboard-on-windows/index.html",
+		"/E/baiducloud/herechen.github.io/_site/categories/index.html",
+		"/E/baiducloud/herechen.github.io/_site/about/index.html",
+		"/E/baiducloud/herechen.github.io/_site/README.md",
+		"/E/baiducloud/herechen.github.io/_site/index.html",
+		"/E/baiducloud/herechen.github.io/_site/CNAME",
+		"/E/baiducloud/herechen.github.io/_site/blog_update_log.txt",
+		"/E/baiducloud/herechen.github.io/_site/404.html",
+		"/E/baiducloud/herechen.github.io/_posts/2014-04-06-copy-a-string-to-the-clipboard-on-windows.md",
+		"/E/baiducloud/herechen.github.io/_posts/2014-04-04-yi-shi-liu-bu-liu-yu-wo-he-qiu.md"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"跳转",
+			"=",
+			"学科方向 ",
+			"header",
+			":",
+			";",
+			"; ",
+			";",
+			"##",
+			"##.+",
+			"\"\n",
+			"##.+",
+			"##Emmet 插件 - 快速代码补齐",
+			"###",
+			"1",
+			"2",
+			"3",
+			"4",
+			"5",
+			"6",
+			"7",
+			"8",
+			"print",
+			"改进方向",
+			".",
+			"--",
+			"}",
+			"\\include{",
+			"\n",
+			"		",
+			"fileid:",
+			"fileid, ",
+			"fileid.",
+			".",
+			"whtml",
+			"；",
+			"background: #f4f3e9;",
+			"#000",
+			"#eeeeee",
+			" />",
+			"#888",
+			"|",
+			"）",
+			"（",
+			"article",
+			"#980000;",
+			"font-family",
+			"-small",
+			"ffffff",
+			"img",
+			"header",
+			"\" ",
+			" ",
+			"title",
+			"-",
+			"paragraph",
+			"dfh",
+			"分割线",
+			"per",
+			"body"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			";  ",
+			"#333",
+			"#999999",
+			")",
+			"(",
+			"fff",
+			"item"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "ScilabLog.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 65,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65,
+								65
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close"
+							],
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Markdown Extended/Syntaxes/Markdown Extended.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 94.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 175.0
+	},
+	"output.markdown":
+	{
+		"height": 69.0
+	},
+	"project": "my-log.sublime-project",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"sublimeLog.md"
+			],
+			[
+				"lualog.md",
+				"LuaLog.md"
+			],
+			[
+				"subl",
+				"sublimeLog.md"
+			],
+			[
+				"sub",
+				"sublimeLog.md"
+			],
+			[
+				"todo",
+				"Log\\mytask.TODO"
+			],
+			[
+				"lu",
+				"Log\\LuaLog.md"
+			],
+			[
+				"lua",
+				"Log\\LuaLog.md"
+			],
+			[
+				"log",
+				"Log\\sublimeLog.md"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"E:\\baiducloud\\herechen.github.io\\my-blog.sublime-project"
+			],
+			[
+				"blog",
+				"E:\\baiducloud\\herechen.github.io\\my-blog.sublime-project"
+			],
+			[
+				"blo",
+				"E:\\baiducloud\\herechen.github.io\\my-blog.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 206.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

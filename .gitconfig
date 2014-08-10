@@ -1,0 +1,6 @@
+[user]
+	email = chenlei.here@gmail.com
+	name = HereChen
+[alias]
+	pu = push -u origin master
+	hc = commit -m "herechen"
