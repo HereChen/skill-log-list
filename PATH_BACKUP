@@ -1,8 +1,0 @@
-USER-PATH
-C:\Program\Ruby\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\texlive\2013\bin\win32;C:\Program\UnxUtils\usr\local\wbin;C:\Program Files\MATLAB\bin;C:\Program\DevKit\bin;C:\Program\DevKit\mingw\bin;C:\Users\Lei\AppData\Local\Pandoc\;C:\Program\Git\bin;C:\Users\Lei\AppData\Roaming\npm;C:\Program\Python;C:\Program\MyCommand
-
-SYSTEM-PATH
-%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program\Git\cmd;C:\Program\Git\bin;C:\Program\nodejs\
-
-PATHEXE
-.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY
