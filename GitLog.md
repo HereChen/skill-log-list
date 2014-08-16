@@ -58,7 +58,7 @@
 
 		$ git commit --amend
 
-- 取消暂存。
+- 取消暂存。在 add 后执行此条，则提交时将不包含此文件的更新。
 
 		$ git reset HEAD filename
 
@@ -66,7 +66,5 @@
 
 		$ git checkout -- filename
 
-- 忽略文件。将不加入版本控制的文件在 `.gitignore` 文件中列出
-
-ahskdhakd
+- 忽略文件。将不加入版本控制的文件在 `.gitignore` 文件中列出。
 
