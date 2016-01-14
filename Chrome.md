@@ -1,6 +1,10 @@
 # Chrome
 
-## Chrome Network
+## Elements
+
+- 选中元素，按 h 键，可以切换显示隐藏状态
+
+## Network
 
 - 蓝线: HTML加载解析完毕
 - 红线: css、js、图片等资源下载完毕
