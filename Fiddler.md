@@ -1,8 +1,10 @@
 ## Fiddler
 
+- 使用 Fiddler 时关闭代理 (比如：Shadowsocks)
 - 开启流模式：点击工具栏 Stream
 - 禁止缓存：Rules -> Performance -> Disable Caching
 - 资源大小占比饼状图：Statistics -> Show Chart
+- 隐藏图片请求：Rules -> Hide Image Requests
 
 - Timeline 颜色 <https://imququ.com/post/timeline-in-fiddler.html>
     - 浅绿色 图片
