@@ -1,7 +1,6 @@
 # Git 学习笔记
 
-- [https://github.com/progit/progit](https://github.com/progit/progit)
-- 2014-08-16 13:55:40
+1. 公司 Git 与 Github 同时使用: Windows 10 + Ubuntu Bash
 
 ## Git 基础
 
@@ -68,3 +67,6 @@
 
 - 忽略文件。将不加入版本控制的文件在 `.gitignore` 文件中列出。
 
+## 参考资料
+
+- [https://github.com/progit/progit](https://github.com/progit/progit)
