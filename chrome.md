@@ -3,6 +3,10 @@
 - 各个功能项可以拖动改变顺序
 - Ctrl + ]/[ 可以切换功能页
 
+## Settings
+
+- Prefference > Console > Show timestamps: 勾选后 Console 中输出, 包含输出时间
+
 ## Elements
 
 - 选中元素，按 h 键，可以切换显示隐藏状态
