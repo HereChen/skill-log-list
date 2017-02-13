@@ -67,6 +67,14 @@
 
 - 忽略文件。将不加入版本控制的文件在 `.gitignore` 文件中列出。
 
+### 合并分支(develop 合并到 master)
+
+pull -> merge -> 修改冲突
+
+- 切换到 master 分支: git checkout master
+- 合并 develop 到 master: git merge develop
+- 提交(git bash 中 Esc+Shift, wq 保存退出), git push 上传
+
 ## 参考资料
 
 - [https://github.com/progit/progit](https://github.com/progit/progit)
