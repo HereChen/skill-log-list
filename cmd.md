@@ -7,3 +7,5 @@
 - 复制: `copy \latex\main.tex .` 复制到当前文件夹下
 - 删除: `del *.log` 删除 log 后缀文件
 - 输出变量: `echo %ANT_HOME%`
+- 查看端口进程: `netstat -ano`
+- 杀进程: `Taskkill /PID 进程PID /F`

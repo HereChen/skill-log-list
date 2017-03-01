@@ -66,6 +66,7 @@
 		$ git checkout -- filename
 
 - 忽略文件。将不加入版本控制的文件在 `.gitignore` 文件中列出。
+- 新建分支: `git checkout -b hunan`
 
 ### 合并分支(develop 合并到 master)
 
