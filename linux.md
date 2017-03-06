@@ -1,1 +1,7 @@
-zip -r myzip.zip ./* µ±Ç°ÎÄ¼ş¼ĞÏÂÄÚÈİÑ¹Ëõ
+# Linux
+
+- å‹ç¼©: `zip -r myzip.zip ./*`
+- è§£å‹: `unzip myzip.zip -d myzip`
+- å‹ç¼©: `tar -czvf xxx.tar.gz folder`
+- è§£å‹ç¼©: `tar -xzvf xxx.tar.gz`
+- å¤åˆ¶å½“å‰æ–‡ä»¶å¤¹ä¸‹æ‰€æœ‰æ–‡ä»¶: `cp -r * ../folder`
