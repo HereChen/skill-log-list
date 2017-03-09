@@ -2,6 +2,7 @@
 
 - 各个功能项可以拖动改变顺序
 - Ctrl + ]/[ 可以切换功能页
+- 文本编辑, 地址栏输入 `data:text/html, <html contenteditable>`
 
 ## Settings
 

@@ -67,6 +67,7 @@
 
 - 忽略文件。将不加入版本控制的文件在 `.gitignore` 文件中列出。
 - 新建分支: `git checkout -b hunan`
+- 清空 git 目录: `git clean -d -x -f`, `-x` 会删除 ignore 的文件 <http://stackoverflow.com/questions/673407/how-do-i-clear-my-local-working-directory-in-git>
 
 ### 合并分支(develop 合并到 master)
 
