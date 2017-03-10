@@ -69,6 +69,8 @@
 - 新建分支: `git checkout -b hunan`
 - 清空 git 目录: `git clean -d -x -f`, `-x` 会删除 ignore 的文件 <http://stackoverflow.com/questions/673407/how-do-i-clear-my-local-working-directory-in-git>
 
+- 关闭 `warning: LF will be replaced by CRLF` 警告, `git config core.autocrlf`
+
 ### 合并分支(develop 合并到 master)
 
 pull -> merge -> 修改冲突
