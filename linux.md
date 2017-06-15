@@ -12,3 +12,11 @@
 - 卸载(CMD): `lxrun /uninstall`
 - 安装(CMD): `lxrun /install`
 - 升级(Bash): `sudo do-release-upgrade`
+
+## 运维
+
+- 查看端口是否可用: `nc -zv 127.0.0.1 80 8080`
+- 查看进程: `ps -ef | grep tomcat_8103`, `ps aux | grep tomcat_8103`
+- 杀进程: `kill -9 8111`
+- rpm 包依赖检测: `rpm -qpR tcpdump-4.9.0-7.1.x86_64.rpm`
+- docker 安装: `curl -sSL https://get.docker.com/ | sh`
