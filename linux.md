@@ -6,7 +6,6 @@
 - 解压缩: `tar -xzvf xxx.tar.gz`
 - 复制当前文件夹下所有文件: `cp -r * ../folder`
 - 复制文件内内容: `xclip -sel c < file`
-- 进程查找: `ps aux | grep tomcat`
 
 ## Bash On Ubuntu On Windows 升级
 
