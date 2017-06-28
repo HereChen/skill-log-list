@@ -16,7 +16,8 @@
 
 ## 运维
 
-- 查看本机端口: ` netstat -lntu`.
+- 查看本机端口: `netstat -lntu`, `netstat -tulpn | grep LISTEN`.
+- 查看是32位还是64位: `file /sbin/init`
 - 查看端口是否可用: `nc -zv 127.0.0.1 80 8080`, `nc -z 127.0.0.1 8080`
 - 查看进程: `ps -ef | grep tomcat_8103`, `ps aux | grep tomcat_8103`
 - 杀进程: `kill -9 8111`
