@@ -24,4 +24,7 @@ systemctl restart vsftpd
 
 # 启动时自动运行
 systemctl enable vsftpd
+
+# 本机测试
+ftp localhost
 ```
