@@ -3,6 +3,7 @@
 ## 准备
 
 - 下载安装: <https://about.gitlab.com/installation/#centos-7>
+- GitLab CE API: <https://docs.gitlab.com/ce/api/>
 
 ## 安装配置
 
@@ -31,3 +32,18 @@ sudo yum install gitlab-ce
 ```bash
 sudo gitlab-ctl reconfigure
 ```
+
+4. 备用
+
+```bash
+# gitlab-ctl command not found
+# refer: https://gitlab.com/gitlab-org/omnibus-gitlab/issues/493
+/opt/gitlab/bin/gitlab-ctl reconfigure
+
+# gitlab-ctl reconfigure 报错 Chef client failed (ssh)
+# Error executing action `run` on resource 'execute[semodule -i /opt/gitlab/embedded/selinux/...ssh-keygen.pp'
+# refer: https://gitlab.com/gitlab-org/gitlab-ce/issues/28915
+yum install libsemanage-static libsemanage-devel
+```
+
+在浏览器中输入本机 IP 进入 GitLab.
