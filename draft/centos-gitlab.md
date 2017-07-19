@@ -38,11 +38,22 @@ sudo gitlab-ctl reconfigure
 # gitlab-ctl command not found
 # refer: https://gitlab.com/gitlab-org/omnibus-gitlab/issues/493
 /opt/gitlab/bin/gitlab-ctl reconfigure
+# 或者先添加链接 ln -s /opt/gitlab/bin/gitlab-ctl /usr/bin/gitlab-ctl
 
 # gitlab-ctl reconfigure 报错 Chef client failed (ssh)
 # Error executing action `run` on resource 'execute[semodule -i /opt/gitlab/embedded/selinux/...ssh-keygen.pp'
 # refer: https://gitlab.com/gitlab-org/gitlab-ce/issues/28915
 yum install libsemanage-static libsemanage-devel
+```
+
+5. localhost 改成 IP
+
+新建项目后, 默认地址是 localhost, 比如: `git@localhost:ProjectsSource/xxxxx.git`. 需要更改配置文件.
+
+```bash
+cd /opt/gitlab/embedded/service/gitlab-rails/config  
+vim gitlab.yml
+# host: localhost 改为 host: 192.168.100.133
 ```
 
 在浏览器中输入本机 IP 进入 GitLab.
