@@ -25,3 +25,9 @@ sudo systemctl reload firewalld
 curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
 sudo yum install gitlab-ce
 ```
+
+3. 配置启动 GitLab
+
+```bash
+sudo gitlab-ctl reconfigure
+```
