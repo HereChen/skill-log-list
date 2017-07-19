@@ -3,7 +3,6 @@
 ## 准备
 
 - 下载安装: <https://about.gitlab.com/installation/#centos-7>
-- GitLab CE API: <https://docs.gitlab.com/ce/api/>
 
 ## 安装配置
 
@@ -47,3 +46,8 @@ yum install libsemanage-static libsemanage-devel
 ```
 
 在浏览器中输入本机 IP 进入 GitLab.
+
+## 使用
+
+- GitLab CE API: <https://docs.gitlab.com/ce/api/>
+- gitlab ce ci, <https://docs.gitlab.com/ce/ci/>
