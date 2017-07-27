@@ -30,3 +30,5 @@ systemctl enable vsftpd
 # 本机测试
 ftp localhost
 ```
+
+浏览器 `ftp://ip` 进入.
