@@ -9,6 +9,16 @@
 ```bash
 yum install epel-release
 yum install nginx
+systemctl start nginx
+systemctl stop nginx
+```
+
+**问题**
+
+> `while connecting to upstream Permission denied`
+
+```
+setsebool -P httpd_can_network_connect 1
 ```
 
 ## 常用命令
