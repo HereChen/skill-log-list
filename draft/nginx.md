@@ -2,6 +2,15 @@
 
 2017-07-17 16:36:55
 
+## 安装
+
+**CentOS 在线安装**
+
+```bash
+yum install epel-release
+yum install nginx
+```
+
 ## 常用命令
 
 - 启动, `nginx.exe`
