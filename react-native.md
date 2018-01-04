@@ -6,6 +6,7 @@
 ## Android
 
 1. 安装 Android Studio <http://www.android-studio.org>
+2. 虚拟机下载: <https://www.genymotion.com/download/>
 
 ```
 # 新建环境变量
