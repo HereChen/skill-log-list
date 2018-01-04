@@ -2,6 +2,7 @@
 
 > 1. <https://facebook.github.io/react-native>
 > 2. <https://facebook.github.io/react-native/docs/getting-started.html>
+> 3. 示例项目: <https://github.com/jiwonbest/amazing-react-projects>
 
 ## Android
 
@@ -73,3 +74,19 @@ react-native run-ios
 2. F5 生成 lunch.json 文件.
 3. 进入调试菜单(Ctrl + Shift + D), 选择 Debug Android.
 4. 设置断点或者写入 `debugger` 开始调试.
+
+## 工程结构
+
+> https://medium.com/the-react-native-log/organizing-a-react-native-project-9514dfadaa0
+
+```
+android/
+ios/
+app/
+ -- components/
+ -- config/
+ -- screens/
+ -- actions/
+ -- reducers/
+ -- index.js
+```
