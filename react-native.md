@@ -61,6 +61,15 @@ react-native run-ios
 
 根据提示, 可以菜单按钮选择重新加载或热加载. Android 可摇晃手机显示菜单.
 
+### Chrome 调试
+
 1. `Remote JS Debugging` 开启JS调试.
 2. 浏览器端进去 `http://localhost:8081/debugger-ui/`, 并开启开发工具.
 3. 可在 Sources 中设置断点或者代码中写入 `debugger`.
+
+### VSCode 调试
+
+1. 安装扩展: React Native Tools.
+2. F5 生成 lunch.json 文件.
+3. 进入调试菜单(Ctrl + Shift + D), 选择 Debug Android.
+4. 设置断点或者写入 `debugger` 开始调试.
