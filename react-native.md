@@ -34,6 +34,16 @@ react-native run-android
 1. 选择物理设备 `adb devices`, 查看当前的 Android 设备.
 ```
 
+**问题**
+
+1. Android Emulator(Genymotion 和 Android Studio 自带虚拟机) 与 Hyper-V 不兼容. 需要关闭 Hyper-V.
+
+```bash
+# turn off Hyper-V
+
+# turn on Hyper-V
+```
+
 ## IOS
 
 IOS 版本编译需要在 Mac 上进行.
