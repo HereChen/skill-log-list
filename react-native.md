@@ -58,6 +58,8 @@ react-native run-ios
 
 ## 调试
 
+> https://facebook.github.io/react-native/docs/debugging.html
+
 根据提示, 可以菜单按钮选择重新加载或热加载. Android 可摇晃手机显示菜单.
 
 1. `Remote JS Debugging` 开启JS调试.
