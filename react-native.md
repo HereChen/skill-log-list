@@ -28,9 +28,8 @@ react-native run-android
 
 **other**
 
-```
 1. 选择物理设备 `adb devices`, 查看当前的 Android 设备.
-```
+2. `Ctrl + M` 打开菜单 (Android Studio自带虚拟机没有菜单和摇晃手机, 可以这种方式打开菜单).
 
 **问题**
 
