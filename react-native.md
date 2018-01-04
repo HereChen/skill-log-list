@@ -4,6 +4,8 @@
 > 2. <https://facebook.github.io/react-native/docs/getting-started.html>
 > 3. 示例项目: <https://github.com/jiwonbest/amazing-react-projects>
 
+示例项目 python 和 node-gyp-bin 相关错误可以尝试先执行 `yar add node-sass` 或者 `npm install -f node-sass`.
+
 ## Android
 
 1. 安装 Android Studio <http://www.android-studio.org>
