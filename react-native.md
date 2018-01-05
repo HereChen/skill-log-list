@@ -8,6 +8,8 @@
 
 ## Android
 
+### 环境及Demo
+
 1. 安装 Android Studio <http://www.android-studio.org>
 2. 虚拟机下载: <https://www.genymotion.com/download/>
 
@@ -43,6 +45,90 @@ react-native run-android
 
 # turn on Hyper-V
 ```
+
+### 打包
+
+**1. 生成签名密钥**
+
+```bash
+$ keytool -genkey -v -keystore my-release-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000
+Enter keystore password:
+Keystore password is too short - must be at least 6 characters
+Enter keystore password: chenlei
+Re-enter new password: chenlei
+What is your first and last name?
+  [Unknown]:  HereChen
+What is the name of your organizational unit?
+  [Unknown]:  HereChen
+What is the name of your organization?
+  [Unknown]:  HereChen
+What is the name of your City or Locality?
+  [Unknown]:  Chengdu
+What is the name of your State or Province?
+  [Unknown]:  Sichuan
+What is the two-letter country code for this unit?
+  [Unknown]:  51
+Is CN=HereChen, OU=HereChen, O=HereChen, L=Chengdu, ST=Sichuan, C=51 correct?
+  [no]:  yes
+
+Generating 2,048 bit RSA key pair and self-signed certificate (SHA256withRSA) with a validity of 10,000 days
+        for: CN=HereChen, OU=HereChen, O=HereChen, L=Chengdu, ST=Sichuan, C=51
+Enter key password for <my-key-alias>
+        (RETURN if same as keystore password):
+[Storing my-release-key.keystore]
+```
+
+**2. gradle设置**
+
+1. `my-release-key.keystore` 文件放到工程 `android/app` 文件夹下.
+2. 编辑 `android/app/gradle.properties`, 添加如下信息.
+
+```
+MYAPP_RELEASE_STORE_FILE=my-release-key.keystore
+MYAPP_RELEASE_KEY_ALIAS=my-key-alias
+MYAPP_RELEASE_STORE_PASSWORD=chenlei
+MYAPP_RELEASE_KEY_PASSWORD=chenlei
+```
+
+3. 编辑 `android/app/build.gradle`, 添加如下信息.
+
+```
+...
+android {
+    ...
+    defaultConfig { ... }
+    signingConfigs {
+        release {
+            storeFile file(MYAPP_RELEASE_STORE_FILE)
+            storePassword MYAPP_RELEASE_STORE_PASSWORD
+            keyAlias MYAPP_RELEASE_KEY_ALIAS
+            keyPassword MYAPP_RELEASE_KEY_PASSWORD
+        }
+    }
+    buildTypes {
+        release {
+            ...
+            signingConfig signingConfigs.release
+        }
+    }
+}
+...
+```
+
+**3. 打包**
+
+```bash
+cd android && ./gradlew assembleRelease
+```
+
+打包后在 `android/app/build/outputs/apk/app-release.apk`. 
+
+**安装方式**
+
+1. Genymotion 可以拖拽 apk 进行安装.
+2. `adb install app-release.apk` 安装.
+
+如果报签名错误, 可先卸载之前的 debug 版本.
 
 ## IOS
 
