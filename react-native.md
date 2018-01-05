@@ -50,6 +50,7 @@ react-native run-android
 
 > 1. https://facebook.github.io/react-native/docs/signed-apk-android.html
 > 2. https://reactnative.cn/docs/0.51/signed-apk-android.html
+> 3. https://www.jianshu.com/p/1380d4c8b596
 
 **1. 生成签名密钥**
 
