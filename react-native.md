@@ -134,6 +134,26 @@ cd android && ./gradlew assembleRelease
 
 如果报签名错误, 可先卸载之前的 debug 版本.
 
+### 其他
+
+**入口文件更改**
+
+React Native CLI 新建的工程, 默认入口是 `index.js`. 在 `android\app\build.gradle` 中更改入口.
+
+```javascript
+project.ext.react = [
+    entryFile: "index.android.js"
+]
+```
+
+对应更改 `android\app\src\main\java\com\**\MainApplication.java`.
+
+```java
+protected String getJSMainModuleName() {
+  return "index.android";
+}
+```
+
 ## IOS
 
 IOS 版本编译需要在 Mac 上进行.
