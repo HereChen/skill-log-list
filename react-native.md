@@ -202,3 +202,9 @@ app/
  -- reducers/
  -- index.js
 ```
+
+## 问题及解决
+
+1. VSCode Debug 无法加载的情况, 首先重启 VSCode 再启动项目.
+2. 添加`antd-mobile`后报错, 无法解析 `react-dom`, 依赖中加入`react-dom`并安装即可.
+3. 集成`react-native-navigation`需要注意Android SDK版本, 版本过低可能出现编译错误(`Error:Error retrieving parent for item: No resource found`).
