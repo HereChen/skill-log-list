@@ -5,6 +5,16 @@
 > 3. 示例项目: <https://github.com/jiwonbest/amazing-react-projects>
 
 示例项目 python 和 node-gyp-bin 相关错误可以尝试先执行 `yar add node-sass` 或者 `npm install -f node-sass` (<https://github.com/sass/node-sass/issues/1980>).
+## 环境配置
+
+```bash
+# install nodejs
+npm install -g react-native-cli
+```
+
+**Atom**
+
+> https://atom.io/packages/nuclide
 
 ## Android
 
@@ -20,8 +30,6 @@ ANDROID_HOME, C:\Users\chenl\AppData\Local\Android\Sdk
 %ANDROID_HOME%\tools
 %ANDROID_HOME%\platform-tools
 ```
-
-2. `npm install -g react-native-cli`
 
 **Demo**
 
@@ -218,6 +226,11 @@ src/
   --utils/
   --constants.js
 ```
+
+## Tips
+
+1. 图片引用
+2. style 书写: CSS 改成小驼峰.
 
 ## 问题及解决
 
