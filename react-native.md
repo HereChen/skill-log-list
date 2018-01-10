@@ -138,6 +138,8 @@ cd android && ./gradlew assembleRelease
 
 **入口文件更改**
 
+> 从0.49开始, 只有一个入口, 不区分 ios 和 android. <https://github.com/facebook/react-native/releases/tag/v0.49.0>
+
 React Native CLI 新建的工程, 默认入口是 `index.js`. 在 `android\app\build.gradle` 中更改入口.
 
 ```javascript
@@ -189,7 +191,7 @@ react-native run-ios
 
 ## 工程结构
 
-> https://medium.com/the-react-native-log/organizing-a-react-native-project-9514dfadaa0
+> [Organizing a React Native Project](https://medium.com/the-react-native-log/organizing-a-react-native-project-9514dfadaa0)
 
 ```
 android/
@@ -201,6 +203,20 @@ app/
  -- actions/
  -- reducers/
  -- index.js
+```
+
+> [React native project setup — a better folder structure](https://hackernoon.com/manage-react-native-project-folder-structure-and-simplify-the-code-c98da77ef792)
+
+```
+android/
+ios/
+public/
+src/
+  --components/
+  --scenes/
+  --style/
+  --utils/
+  --constants.js
 ```
 
 ## 问题及解决
