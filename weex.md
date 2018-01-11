@@ -49,3 +49,4 @@ weex build web
 
 1. `https://maven.google.com/` 链接不上, 更改`\platforms\android\build.gradle`文件, 换成 `https://dl.google.com/dl/android/maven2/`。
 2. `adb: failed to stat app/build/outputs/apk/playground.apk: No such file or directory`, 替换 `platforms/android/app/build.gradle` 文件中的 `weex-app.apk` 为 `playground.apk`.
+3. `weex debug` 报错可先安装 `npm install -g weex-devtool`.
