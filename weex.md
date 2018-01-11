@@ -6,6 +6,7 @@
 
 1. [网易严选](https://github.com/zwwill/yanxuan-weex-demo)
 2. [点我达骑手Weex最佳实践](https://mp.weixin.qq.com/s/dowOE_QpZrtV5GH9EAgyHg)
+2. [weexteam/weex-hackernews](https://github.com/weexteam/weex-hackernews)
 
 ## 搭建开发环境
 
@@ -27,14 +28,20 @@ npm run dev & npm run serve
 
 > https://github.com/weexteam/weex-pack
 
-```
+```bash
+# debug
+weex debug
+
+# add platform
 weex platform add android
 weex platform add ios
 
+# run
 weex run web
 weex run android
 weex run ios
 
+# build
 weex build web
 ```
 
