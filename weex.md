@@ -5,6 +5,7 @@
 **案例**
 
 1. [网易严选](https://github.com/zwwill/yanxuan-weex-demo)
+2. [点我达骑手Weex最佳实践](https://mp.weixin.qq.com/s/dowOE_QpZrtV5GH9EAgyHg)
 
 ## 搭建开发环境
 
