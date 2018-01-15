@@ -1,27 +1,23 @@
 # React Native
 
-> 1. <https://facebook.github.io/react-native>
-> 2. <https://facebook.github.io/react-native/docs/getting-started.html>
-> 3. 示例项目: <https://github.com/jiwonbest/amazing-react-projects>
+> 1. [React Native 主页](https://facebook.github.io/react-native)
+> 2. 示例项目: [amazing-react-projects](https://github.com/jiwonbest/amazing-react-projects)
 
 示例项目 python 和 node-gyp-bin 相关错误可以尝试先执行 `yar add node-sass` 或者 `npm install -f node-sass` (<https://github.com/sass/node-sass/issues/1980>).
 ## 环境配置
 
-```bash
-# install nodejs
-npm install -g react-native-cli
-```
+> https://facebook.github.io/react-native/docs/getting-started.html
 
-**Atom**
+### 系统环境
 
-> https://atom.io/packages/nuclide
+1. 安装 [nodejs](https://nodejs.org).
+2. `npm install -g react-native-cli`.
 
-## Android
+**Android**
 
-### 环境及Demo
-
-1. 安装 Android Studio <http://www.android-studio.org>
-2. 虚拟机下载: <https://www.genymotion.com/download/>
+1. JDK (并配置环境变量)
+2. 安装 Android Studio <http://www.android-studio.org>
+3. 通过 SDK Manager 下载 SDK, 并配置环境变量.
 
 ```
 # 新建环境变量
@@ -30,6 +26,22 @@ ANDROID_HOME, C:\Users\chenl\AppData\Local\Android\Sdk
 %ANDROID_HOME%\tools
 %ANDROID_HOME%\platform-tools
 ```
+
+**IOS**
+
+需要安装 XCode.
+
+### 编辑器
+
+**Visual Studio Code**
+
+安装扩展 `React Native Tools` 用于调试.
+
+**Atom**
+
+> https://atom.io/packages/nuclide
+
+## Android
 
 **Demo**
 
@@ -43,16 +55,6 @@ react-native run-android
 
 1. 选择物理设备 `adb devices`, 查看当前的 Android 设备.
 2. `Ctrl + M` 打开菜单 (Android Studio自带虚拟机没有菜单和摇晃手机, 可以这种方式打开菜单).
-
-**问题**
-
-1. Android Emulator(Genymotion 和 Android Studio 自带虚拟机) 与 Hyper-V 不兼容. 需要关闭 Hyper-V.
-
-```bash
-# turn off Hyper-V
-
-# turn on Hyper-V
-```
 
 ### 打包
 
@@ -178,59 +180,74 @@ cd AwesomeProject
 react-native run-ios
 ```
 
+## 工具/依赖(dependencies)
+
+### 导航
+
+> https://facebook.github.io/react-native/docs/navigation.html
+
+1. [react-navigation](https://github.com/react-navigation/react-navigation) 提供了常用的导航方式(Stack, Tab, Drawer), 推荐.
+2. [NavigatorIOS](https://facebook.github.io/react-native/docs/navigatorios.html) 为内建的导航, 仅在 IOS 上可用.
+
+### UI
+
+
+### HTTP 请求
+
+> https://facebook.github.io/react-native/docs/network.html
+
+1. [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) 为内建接口.
+2. [**axios**](https://github.com/axios/axios) 为使用校广泛的第三方请求库, 推荐使用.
+
 ## 调试
 
 > https://facebook.github.io/react-native/docs/debugging.html
 
 根据提示, 可以菜单按钮选择重新加载或热加载. Android 可摇晃手机显示菜单.
 
-### Chrome 调试
+### 虚拟机
+
+1. [Genymotion](https://www.genymotion.com/download/), 需要先注册, 然后选择 for personal 使用. 如果系统开启了 Hyper-V, 需要先关闭.
+2. Android Studio 内建虚拟机, 同样需要关闭 Hyper-V.
+3. [Visual Studio Emulator for Android](https://www.visualstudio.com/vs/msft-android-emulator/) 需要开启 Hyper-V.
+
+### 调试工具: Chrome
 
 1. `Remote JS Debugging` 开启JS调试.
 2. 浏览器端进去 `http://localhost:8081/debugger-ui/`, 并开启开发工具.
 3. 可在 Sources 中设置断点或者代码中写入 `debugger`.
 
-### VSCode 调试
+### 调试工具: VSCode
 
 1. 安装扩展: React Native Tools.
 2. F5 生成 lunch.json 文件.
 3. 进入调试菜单(Ctrl + Shift + D), 选择 Debug Android.
-4. 设置断点或者写入 `debugger` 开始调试.
+4. 设置断点或者写入 `debugger` 开始调试, 在 output 栏输出.
+
+### HTTP 调试问题备注
+
+应用 Fiddler 调试 HTTP, 模拟器设置了代理后, APP 无法热加载 JS bundle. 目前只有用 Chrome 或者断点的方式来调试.
 
 ## 工程结构
 
-> [Organizing a React Native Project](https://medium.com/the-react-native-log/organizing-a-react-native-project-9514dfadaa0)
+> 1. [Organizing a React Native Project](https://medium.com/the-react-native-log/organizing-a-react-native-project-9514dfadaa0)
+> 2. [React native project setup — a better folder structure](https://hackernoon.com/manage-react-native-project-folder-structure-and-simplify-the-code-c98da77ef792)
 
 ```
-android/
-ios/
-app/
- -- components/
- -- config/
- -- screens/
- -- actions/
- -- reducers/
- -- index.js
+android/         # Android 工程
+ios/             # IOS 工程
+src/             # 开发前端资源
+  -- assets/     # 静态资源
+  -- components/ # 组件
+  -- api/        # 接口
+  -- route/      # 导航(路由)
+  -- config/     # 常量配置
+  -- screens/    # 页面/功能
+  -- utils/      # 常用工具
+  -- reducers 相关
+  -- index.js    # APP 入口
+index.js         # 入口文件
 ```
-
-> [React native project setup — a better folder structure](https://hackernoon.com/manage-react-native-project-folder-structure-and-simplify-the-code-c98da77ef792)
-
-```
-android/
-ios/
-public/
-src/
-  --components/
-  --scenes/
-  --style/
-  --utils/
-  --constants.js
-```
-
-## Tips
-
-1. 图片引用
-2. style 书写: CSS 改成小驼峰.
 
 ## 问题及解决
 
