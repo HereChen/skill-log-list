@@ -227,7 +227,7 @@ react-native run-ios
 ### 调试工具: VSCode
 
 1. 安装扩展: React Native Tools.
-2. F5 生成 lunch.json 文件.
+2. F5 生成 launch.json 文件.
 3. 进入调试菜单(Ctrl + Shift + D), 选择 Debug Android.
 4. 设置断点或者写入 `debugger` 开始调试, 在 output 栏输出.
 
