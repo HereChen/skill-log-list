@@ -6,6 +6,16 @@
 `F11` | 全屏
 `Ctrl + F2` | 全选当前选中文本
 
+## 配置
+
+```json
+"terminal.integrated.shell.windows": "D:\\Git\\bin\\bash.exe",
+"terminal.integrated.shellArgs.windows": [
+    "--login",
+    "-i"
+],
+```
+
 
 ## 参考
 
