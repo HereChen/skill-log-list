@@ -21,7 +21,7 @@
     flush privileges
     ```
 
-3. 远程数据库复制到本地
+3. 远程数据库复制到本地, 密码复杂的用双引号括起来(否则会报错).
 
     ```bash
     # [MySQL:将远程服务器的数据库拷到本地/复制他人数据库](http://blog.csdn.net/ycisacat/article/details/52587529)
