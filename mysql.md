@@ -3,6 +3,21 @@
 1. 下载: <https://dev.mysql.com/downloads/mysql/>
 2. 安装: <http://blog.csdn.net/darling_for/article/details/79070353>
 
+    ```ini
+    # 配置文件: D:\mysql-5.7.21-winx64/my.ini
+    [mysql]
+    default-character-set=utf8
+    [mysqld]
+    port = 3306
+    basedir=D:\mysql-5.7.21-winx64
+    datadir=D:\mysql-5.7.21-winx64\data
+    max_connections=200
+    character-set-server=utf8
+    explicit_defaults_for_timestamp=true
+    skip-grant-tables
+    default-storage-engine=INNODB
+    ```
+
     ```bash
     # 初始化, 会生成初始密码
     mysqld --initialize --user=mysql --console
