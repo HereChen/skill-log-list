@@ -5,12 +5,12 @@
 - 禁止缓存：Rules -> Performance -> Disable Caching
 - 资源大小占比饼状图：Statistics -> Show Chart
 - 隐藏图片请求：Rules -> Hide Image Requests
-
 - Timeline 颜色 <https://imququ.com/post/timeline-in-fiddler.html>
     1.浅绿色 图片
     2.绿色 javascript
     3.紫色 css
     4.请求中的黑色竖线，表示的是浏览器收到服务端响应的第一个字节这一时刻。这个时间受 DNS 解析、建立连接、发送请求、等待服务端响应等步骤的影响。
+- 查看 gzip 内容：inspectors > 点击响应部分 Raw > 上面的显示的 `Response body is encoded. Click to decode`
 
 ## 手机APP抓包
 
