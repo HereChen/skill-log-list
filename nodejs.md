@@ -7,17 +7,17 @@
 
 # nodejs
 
-- 执行本地命令, <http://stackoverflow.com/questions/20643470/execute-a-command-line-binary-with-node-js>
-- ubuntu 安装 nodejs, <https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions>
+* 执行本地命令, <http://stackoverflow.com/questions/20643470/execute-a-command-line-binary-with-node-js>
+* ubuntu 安装 nodejs, <https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions>
 
-```
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-sudo apt-get install -y nodejs
-```
+    ```bash
+    curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+    sudo apt-get install -y nodejs
+    ```
 
-- node_modules windows 上删除
+* node_modules windows 上删除
 
-```
-npm install -g rimraf
-rimraf node_modules
-```
+    ```bash
+    npm install -g rimraf
+    rimraf node_modules
+    ```
