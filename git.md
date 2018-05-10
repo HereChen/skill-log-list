@@ -103,6 +103,12 @@ git 2.x push 默认会推送所有分支，设置为推送当前分支。
 git config --global push.default simple
 ```
 
+## 修改 git 默认编辑器
+
+```bash
+git config --global core.editor vim
+```
+
 ## 参考资料
 
 - [https://github.com/progit/progit](https://github.com/progit/progit)
