@@ -85,6 +85,24 @@ pull -> merge -> 修改冲突
 - 合并 develop 到 master: git merge develop
 - 提交(git bash 中 Esc+Shift, wq 保存退出), git push 上传
 
+## Git 别名
+
+```bash
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.pu push
+```
+
+## push 默认设置
+
+git 2.x push 默认会推送所有分支，设置为推送当前分支。
+
+```bash
+git config --global push.default simple
+```
+
 ## 参考资料
 
 - [https://github.com/progit/progit](https://github.com/progit/progit)
