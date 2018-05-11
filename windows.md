@@ -32,6 +32,11 @@
     sudo apt-get install zsh
     # oh-my-zsh 安装
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+    # 主题修改
+    vim ~/.zshrc
+    # ZSH_THEME="ys"
+
     # 默认启动 zsh
     vim ~/.bash_profile
     # 末尾添加
@@ -44,23 +49,14 @@
 zsh 启动时如果需要添加 ssh-add，需要在 `~/.zshrc` 末尾添加，同时 `.ssh` 权限需要作改为 `chmod -R 700 .ssh`。
 
 ```bash
-if [ -z "$SSH_AUTH_SOCK" ] ; then
-  eval `ssh-agent -s`
-  ssh-add -D
-  ssh-add ~/.ssh/id_rsa_gitlab
-  ssh-add ~/.ssh/id_rsa_github
-  ssh-add ~/.ssh/id_rsa_inter_gitlab
-  ssh-add ~/.ssh/id_rsa_gitee
-  ssh-add -l
-fi
-```
-
-## VSCode 集成 zsh (继承上一节)
-
-VSCode 设置参数，注意 zsh 不要设置默认路径，设置后 VSCode 不能进入当前文件夹下。
-
-```json
-{
-    "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\bash.exe"
-}
+vim ~/.zshrc
+# if [ -z "$SSH_AUTH_SOCK" ] ; then
+#   eval `ssh-agent -s`
+#   ssh-add -D
+#   ssh-add ~/.ssh/id_rsa_gitlab
+#   ssh-add ~/.ssh/id_rsa_github
+#   ssh-add ~/.ssh/id_rsa_inter_gitlab
+#   ssh-add ~/.ssh/id_rsa_gitee
+#   ssh-add -l
+# fi
 ```
