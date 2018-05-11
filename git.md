@@ -187,6 +187,10 @@ git config --global push.default simple
 git config --global core.editor vim
 ```
 
+### commit
+
+1. 修改提交的信息: `git commit --amend`
+
 ## 参考资料
 
 - [https://github.com/progit/progit](https://github.com/progit/progit)
