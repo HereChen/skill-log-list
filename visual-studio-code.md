@@ -30,6 +30,12 @@ VSCode 设置参数，注意 zsh 启动时不要设置默认路径，设置后 V
 }
 ```
 
+## 常用插件
+
+1. 文件图标：vscode-icons。
+2. Markdown 校验：markdownlint。编辑时提示不符合规范的写法
+3. Markdown 目录显示：markdownlint。左侧根据 title 显示目录，适合内容较多时使用。
+
 ## 参考
 
 - [Key Bindings for Visual Studio Code](https://code.visualstudio.com/docs/customization/keybindings)
