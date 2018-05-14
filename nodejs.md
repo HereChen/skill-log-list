@@ -54,6 +54,7 @@ sudo apt-get install -y nodejs
 3. Ubuntu Bash 中 npm command not found
 
     ```bash
+    sudo chmod 755 -R /usr/local/node/bin
     sudo ln -s /usr/local/node/bin/node /usr/bin/node
     sudo ln -s /usr/local/node/lib /usr/lib/node
     sudo ln -s /usr/local/node/bin/npm /usr/bin/npm
