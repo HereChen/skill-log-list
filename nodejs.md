@@ -50,3 +50,11 @@ sudo apt-get install -y nodejs
     npm install -g rimraf
     rimraf node_modules
     ```
+
+3. Ubuntu Bash 中 npm command not found
+
+    ```bash
+    sudo ln -s /usr/local/node/bin/node /usr/bin/node
+    sudo ln -s /usr/local/node/lib /usr/lib/node
+    sudo ln -s /usr/local/node/bin/npm /usr/bin/npm
+    ```
