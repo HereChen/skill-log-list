@@ -50,6 +50,7 @@ sudo make prefix=/usr/local install
 
 ## Git 基础
 
+* 退出 `git log`：英文键盘下，按 Q 键。
 - 仓库中文件的三种状态：已提交(committed)--本地仓库，已修改(modified)--暂存区域、已暂存(staged)--工作目录。
 - 初始化。初始化后会在工作目录中生成 `.git` 目录 。
 
