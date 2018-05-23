@@ -13,6 +13,7 @@
 
 1. 查看端口占用进程: `netstat -ano | findstr "8081"`
 2. 杀进程: `taskkill /pid XXXXXX`, 或者任务管理器关闭进程。
+3. 最新的 Windows 10 内置 OpenSSH，可直接使用 `ssh` 命令：`ssh username@IP`
 
 ## Windows10 + Cmder + zsh
 
