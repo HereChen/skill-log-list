@@ -1,10 +1,8 @@
 # nginx
 
-2017-07-17 16:36:55
-
 ## 安装
 
-**CentOS 在线安装**
+### CentOS 在线安装
 
 ```bash
 yum install epel-release
@@ -13,11 +11,11 @@ systemctl start nginx
 systemctl stop nginx
 ```
 
-**问题**
+### 问题
 
 > `while connecting to upstream Permission denied`
 
-```
+```bash
 setsebool -P httpd_can_network_connect 1
 ```
 
