@@ -1,5 +1,12 @@
 # jenkins checkstyle
 
+安装基本思路是：
+
+1. yum 命令安装 java 环境和 jenkins。
+2. 如果需要，可以重新 jenkins 端口。
+3. （可选）为了无需端口访问，可配置 nginx。
+4. （可选）如果端口访问受限制，需要防火墙添加端口。
+
 ## CentOS 安装
 
 ```bash
@@ -73,16 +80,6 @@ curl -o jenkins.war https://mirrors.tuna.tsinghua.edu.cn/jenkins/war-stable/late
 nohup java -jar jenkins.war --httpPort=7000 &
 ```
 
-## 命令
-
-```bash
-# 启动
-net start jenkins
-
-# 停止
-net stop jenkins
-```
-
 ## nginx 配置（可选）
 
 ```bash
@@ -91,12 +88,33 @@ yum install epel-release
 yum install nginx
 
 # 配置 nginx
-vim /etc/nginx/nginx.conf
-# location /jenkins/ {
-#   proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-#   proxy_set_header Host $http_host;
-#   proxy_pass http://127.0.0.1:7000/;
+touch /etc/nginx/conf.d/jenkins.conf
+# 建议参照此处的配置替换下面的配置：
+# https://wiki.jenkins.io/display/JENKINS/Running+Jenkins+behind+Nginx
+# upstream jenkins {
+#     server 127.0.0.1:7000;
 # }
+# server {
+#     listen      80 default;
+#     #server_name your_jenkins_site.com;
+#     server_name _;
+#     access_log  /var/log/nginx/jenkins.access.log;
+#     error_log   /var/log/nginx/jenkins.error.log;
+#     proxy_buffers 16 64k;
+#     proxy_buffer_size 128k;
+#     location / {
+#         proxy_pass  http://jenkins;
+#         proxy_next_upstream error timeout invalid_header http_500 http_502 http_503 http_504;
+#         proxy_redirect off;
+#         proxy_set_header    Host            $host;
+#         proxy_set_header    X-Real-IP       $remote_addr;
+#         proxy_set_header    X-Forwarded-For $proxy_add_x_forwarded_for;
+#         proxy_set_header    X-Forwarded-Proto https;
+#     }
+# }
+
+vim /etc/nginx/nginx.conf
+# 默认的 server 配置全部屏蔽
 
 # 添加防火墙端口
 firewall-cmd --zone=public --permanent --add-port=80/tcp
@@ -116,12 +134,29 @@ systemctl restart nginx.service
 setsebool -P httpd_can_network_connect 1
 ```
 
+## 其他 jenkins 配置
+
+### 添加用户
+
+管理员登录，用户名：admin，密码见：`cat /var/lib/jenkins/secrets/initialAdminPassword`。
+
 ## checkstyle
+
+### nodejs 安装
+
+```bash
+wget https://npm.taobao.org/mirrors/node/latest/node-v10.2.1-linux-x64.tar.xz
+tar -xvf node-v10.2.1-linux-x64.tar.xz
+
+vim ~/.bash_profile
+# export NODE_HOME=/usr/local/node-v10.2.1-linux-x64
+# export PATH=$NODE_HOME/bin:$PATH
+```
 
 ### 配置进入
 
 1. http//IP:7000 进入
-2. Gitlab Authentication plugin 插件安装: Manage Jenkins > Manage Plugins > Avaliable > Gitlab Authentication plugin 
+2. Gitlab Authentication plugin 插件安装: Manage Jenkins > Manage Plugins > Avaliable > Gitlab Authentication plugin
 3. SSH 配置: Credentials > ... > Private Key, Enter directly 添加服务器上 ssh-keygen 生成的 private key.
 4. 新建 job: 配置 git repo、对应 Credentials、执行的任务.
 
@@ -148,6 +183,10 @@ setsebool -P httpd_can_network_connect 1
 3. FindBugs Plugin
 4. Nodejs Plugin
 
+## 其他插件
+
+1. Blue Ocean，界面美化
+
 ## 重启
 
 从浏览器中重启：`http://IP:7000/restart`
@@ -159,3 +198,4 @@ BOSS job, java 代码检查, 前端代码检查.
 
 1. [Jenkins Gitlab持续集成打包平台搭建](http://skyseraph.com/2016/07/18/Tools/Jenkins%20Gitlab%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E6%89%93%E5%8C%85%E5%B9%B3%E5%8F%B0%E6%90%AD%E5%BB%BA/)
 2. [Centos7（Firewall）防火墙开启常见端口命令](https://www.5yun.org/10074.html)
+3. [Jenkins Gitlab持续集成打包平台搭建](https://blog.csdn.net/zgzhaobo/article/details/52002181)
