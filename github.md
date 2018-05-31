@@ -1,6 +1,6 @@
 # GitHub
 
-> https://github.com
+> <https://github.com>
 
 ## Tips
 
@@ -14,7 +14,7 @@
 
 [Syncing a fork](https://help.github.com/articles/syncing-a-fork/)
 
-```
+```bash
 git clone git@****.git
 git add remote upstream git@****.git
 git fetch upstream
