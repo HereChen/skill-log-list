@@ -188,6 +188,14 @@ git config --global push.default simple
 git config --global core.editor vim
 ```
 
+### 关闭忽略大小写敏感
+
+直接更改文件名大小写，git 不会跟踪，可以关闭大小写忽略。或者用 `git mv` 重命名。
+
+```bash
+git config core.ignorecase false
+```
+
 ### commit
 
 1. 修改提交的信息: `git commit --amend`
