@@ -163,6 +163,38 @@ pull -> merge -> 修改冲突
 
 ### Tips
 
+### 多个 git 账户 ssh 配置
+
+1. 为每个账户生成 ssh 公钥和私钥
+
+```bash
+cd ~/.ssh/
+
+# github, key 存储文件名输入 id_rsa_github
+ssh-keygen -t rsa -C chenlei.here@qq.com
+
+# gitee, key 存储文件名输入 id_rsa_gitee
+ssh-keygen -t rsa -C chenlei.here@qq.com
+```
+
+2. 配置 config 文件
+
+```bash
+touch config
+# config 文件内容如下
+# Host github.com
+#     HostName github.com
+#     IdentityFile ~/.ssh/id_rsa_github
+#     PreferredAuthentications publickey
+#     User HereChen
+
+# Host gitee.com
+#     HostName gitee.com
+#     IdentityFile ~/.ssh/id_rsa_gitee
+#     PreferredAuthentications publickey
+#     User HereChen
+```
+
 ### Git 别名
 
 ```bash
