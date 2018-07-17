@@ -51,108 +51,107 @@ sudo make prefix=/usr/local install
 ## Git 基础
 
 * 退出 `git log`：英文键盘下，按 Q 键。
-- 仓库中文件的三种状态：已提交(committed)--本地仓库，已修改(modified)--暂存区域、已暂存(staged)--工作目录。
-- 初始化。初始化后会在工作目录中生成 `.git` 目录 。
+* 仓库中文件的三种状态：已提交(committed)--本地仓库，已修改(modified)--暂存区域、已暂存(staged)--工作目录。
+* 初始化。初始化后会在工作目录中生成 `.git` 目录 。
 
-        ```bash
-        git init
-        ```
+    ```bash
+    git init
+    ```
 
-- 跟踪文件。把跟踪文件纳入版本控制。
+* 跟踪文件。把跟踪文件纳入版本控制。
 
-        ```bash
-        git add -A
-        ```
+    ```bash
+    git add -A
+    ```
 
-- 提交更新。提交更改注释。
+* 提交更新。提交更改注释。
 
-        ```bash
-        git commit -m "changes for commit"
-        ```
+    ```bash
+    git commit -m "changes for commit"
+    ```
 
-- 克隆。克隆仓库到本地。
+* 克隆。克隆仓库到本地。
 
-        ```bash
-        git clone git://github.com/schacon/grit.git
-        ```
+    ```bash
+    git clone git://github.com/schacon/grit.git
+    ```
 
-- 查看状态。查看当前文件状态。
+* 查看状态。查看当前文件状态。
 
-        ```bash
-        git status
-        ```
+    ```bash
+    git status
+    ```
 
-- 上传。上传至服务器。
+* 上传。上传至服务器。
 
-        ```bash
-        git push -u master
-        ```
+    ```bash
+    git push -u master
+    ```
 
-- 更新查看。查看尚未更新的文件更新的部分。
+* 更新查看。查看尚未更新的文件更新的部分。
 
-        ```bash
-        git diff
-		```
+    ```bash
+    git diff
+    ```
 
-- 移除文件。将文件从已跟踪文件清单移除。
+* 移除文件。将文件从已跟踪文件清单移除。
 
-        ```bash
-        git rm filename
-        ```
+    ```bash
+    git rm filename
+    ```
 
-- 重命名文件。
+* 重命名文件。
 
-        ```bash
-        git mv file_from file_to
-        ````
+    ```bash
+    git mv file_from file_to
+    ````
 
-- 查看提交历史。
+* 查看提交历史。
 
-        ```bash
-        git log
-        ```
+    ```bash
+    git log
+    ```
 
-- 查看 Git 设置。
+* 查看 Git 设置。
 
-        ```bash
-        git config --list
-        ```
+    ```bash
+    git config --list
+    ```
 
-- 启动图形化界面。
+* 启动图形化界面。
 
-        ```bash
-        gitk
-        ```
+    ```bash
+    gitk
+    ```
 
-- 重新提交(修改最后一次提交)。比如刚提交，但是又忘了将几个文件纳入跟踪，此时可用。
+* 重新提交(修改最后一次提交)。比如刚提交，但是又忘了将几个文件纳入跟踪，此时可用。
 
-        ```bash
-        git commit --amend
-        ```
+    ```bash
+    git commit --amend
+    ```
 
-- 取消暂存。在 add 后执行此条，则提交时将不包含此文件的更新。
+* 取消暂存。在 add 后执行此条，则提交时将不包含此文件的更新。
 
-        ```bash
-        git reset HEAD filename
-        ```
+    ```bash
+    git reset HEAD filename
+    ```
 
-- 取消修改。
+* 取消修改。
 
-        ```bash
-        git checkout -- filename
-        ```
+    ```bash
+    git checkout -- filename
+    ```
 
-- 忽略文件。将不加入版本控制的文件在 `.gitignore` 文件中列出。
-- 新建分支: `git checkout -b hunan`
-- 清空 git 目录: `git clean -d -x -f`, `-x` 会删除 ignore 的文件 <http://stackoverflow.com/questions/673407/how-do-i-clear-my-local-working-directory-in-git>
+* 忽略文件。将不加入版本控制的文件在 `.gitignore` 文件中列出。
+* 新建分支: `git checkout -b hunan`
+* 清空 git 目录: `git clean -d -x -f`, `-x` 会删除 ignore 的文件 <http://stackoverflow.com/questions/673407/how-do-i-clear-my-local-working-directory-in-git>
+* 关闭 `warning: LF will be replaced by CRLF` 警告, `git config --global core.safecrlf false`
+* 设置当前 Repo 的账户
 
-- 关闭 `warning: LF will be replaced by CRLF` 警告, `git config --global core.safecrlf false`
-- 设置当前 Repo 的账户
-
-        ```bash
-        git config user.name "HereChen"
-        git config user.email "chenlei.here@qq.com"
-        ```
+    ```bash
+    git config user.name "HereChen"
+    git config user.email "chenlei.here@qq.com"
+    ```
 
 ### 合并分支(develop 合并到 master)
 
