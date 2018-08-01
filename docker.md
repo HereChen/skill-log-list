@@ -49,7 +49,7 @@ docker image ls
 # 查看 container
 docker container ls
 
-# 运行
+# 运行容器
 docker run hello-world
 
 # stop container
