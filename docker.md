@@ -76,3 +76,29 @@ docker run -p 4000:80 friendlyhello
 # 查看启动的服务
 curl http://localhost:4000
 ```
+
+## Dockerfile
+
+```text
+# 指定基础镜像（image）
+FROM python:2.7-slim
+
+# 指定指令执行的目录（默认的目录是 /）
+WORKDIR /home/demo/docker/python
+
+# 将当前文件夹下的内容复制到 /home/demo/docker/python
+ADD . /home/demo/docker/python
+
+# 安装 requirements.txt 中的依赖
+RUN pip install --trusted-host pypi.python.org -r requirements.txt
+
+# 将容器内 80 端口暴露给外部（应用的端口）
+EXPOSE 80
+
+# 定义环境变量 NAME 的值为 World
+ENV NAME World
+
+# 容器启动后执行 python app.py
+# 只能有一个指令
+CMD ["python", "app.py"]
+```
