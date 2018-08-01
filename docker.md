@@ -84,6 +84,7 @@ curl http://localhost:4000
 FROM python:2.7-slim
 
 # 指定指令执行的目录（默认的目录是 /）
+# 设置后面 RUN, CMD, ENTRYPOINT, COPY, ADD 等命令的执行目录
 WORKDIR /home/demo/docker/python
 
 # 将当前文件夹下的内容复制到 /home/demo/docker/python
