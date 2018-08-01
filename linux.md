@@ -23,3 +23,5 @@
 - 杀进程: `kill -9 8111`
 - rpm 包依赖检测: `rpm -qpR tcpdump-4.9.0-7.1.x86_64.rpm`
 - docker 安装: `curl -sSL https://get.docker.com/ | sh`
+- 查看当前系统 IP: `ifconfig -a`
+- 安装 ifconfig(CentOS): `sudo yum install net-tools`
