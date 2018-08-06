@@ -16,3 +16,8 @@ sudo update-grub
 ```
 
 [How can I increase the Hyper-V display resolution?](https://superuser.com/questions/518484/how-can-i-increase-the-hyper-v-display-resolution)
+
+## 小技巧
+
+1. Windows 屏幕大小设置：设置分辨率即可更改屏幕大小。
+2. 快速建立虚拟机：可直接复制现有的 vhdx 虚拟机硬盘文件，然后导入。
