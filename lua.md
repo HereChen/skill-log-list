@@ -228,86 +228,97 @@
 
 72. 非全局的函数
 
-		Lib = {
-			foo = function(x,y) return x + y end,
-			goo = function(x,y) return x - y end
-		}
-		print(Lib.foo(1,1))
+    ```lua
+    Lib = {
+      foo = function(x,y) return x + y end,
+      goo = function(x,y) return x - y end
+    }
+    print(Lib.foo(1,1))
+    ```
 
 73. 局部函数 `local f = function`。  
 74. 尾调用指一个函数在结尾时调用另一个函数, 那么结尾时就无需再返回这个函数, 而直接把结果给输出参数,从而不再暂用栈空间。  
 
-		function f(x) return g(x) end
-		-- 下面这个就不符合尾调用
-		function f(x) return g(x) + 1 end
+    ```lua
+    function f(x) return g(x) end
+    -- 下面这个就不符合尾调用
+    function f(x) return g(x) + 1 end
+    ```
 
-## 2014-04-20 11:23:53 Sun  
-
-75. Lua 是一种解释性语言。 
+75. Lua 是一种解释性语言。
 76. 两个错误处理的例子
 
-		print "enter a number"
-		n = io.read("*number")
-		if not n then error("invalid input") end
-		-- 更加便捷的
-		print "enter a number"
-		n = assert(io.read("*number"), "invalid input")
+    ```lua
+    print "enter a number"
+    n = io.read("*number")
+    if not n then error("invalid input") end
+    -- 更加便捷的
+    print "enter a number"
+    n = assert(io.read("*number"), "invalid input")
+    ```
 
-77. assert 的第一个参数为 true 时则返回该参数, 若为 false 则执行第二个语句, 第二个参数不是必须的。 
-78. dofile 的核心是 loadfile, loadfile 并不处理错误。 
+77. assert 的第一个参数为 true 时则返回该参数, 若为 false 则执行第二个语句, 第二个参数不是必须的。
+78. dofile 的核心是 loadfile, loadfile 并不处理错误。
 79. 从字符串中读取代码
 
-		f = loadstring("i = i + 1")
-		i = 5; f();
-		print(i)
+    ```lua
+    f = loadstring("i = i + 1")
+    i = 5; f();
+    print(i)
+    ```
 
 80. 加载动态链接库例子
 
-		local path = "/user/local/lib/lua/5.1/socket.so"
-		local f = package.loadlib(path, "luaopen_socket")
-
-## 2014-04-25 12:57:30 Fri
+    ```lua
+    local path = "/user/local/lib/lua/5.1/socket.so"
+    local f = package.loadlib(path, "luaopen_socket")
+    ```
 
 81. 数组通过 table 实现,可以根据需求增长。下标可以是任意值,Lua 库以下标为 1 作为起始。
-	
-		a = {}
-		for i=1, 1000 do
-			a[i] = 0
-		end
-		a = {}
-		for i=-5, 5 do
-			a[i] = i
-		end
-		print(a[-2])
+
+    ```lua
+    a = {}
+    for i=1, 1000 do
+      a[i] = 0
+    end
+    a = {}
+    for i=-5, 5 do
+      a[i] = i
+    end
+    print(a[-2])
+    ```
 
 82. 矩阵与多维数组,必须显式创建每一行.可以用这种方式直接创建三角矩阵,比较节省内存。
 
-		mt = {}
-		N, M = 3, 4;
-		for i=1,N do
-			mt[i] = {}  	-- 创建新的一行
-			for j=1, M do
-				mt[i][j] = i+j;
-			end
-		end
+    ```lua
+    mt = {}
+    N, M = 3, 4;
+    for i=1,N do
+      mt[i] = {}      -- 创建新的一行
+      for j=1, M do
+        mt[i][j] = i+j;
+      end
+    end
 
 83. 文件读取
-	
-		-- 逐行读取并链接
-		lcoal buff = ""
-		for line in io.lines() do
-			buff = buff .. line .. "\n"
-		end
 
-		-- 读取整个文件
-		io.read("*all")
+    ```lua
+    -- 逐行读取并链接
+    lcoal buff = ""
+    for line in io.lines() do
+      buff = buff .. line .. "\n"
+    end
 
-		-- 用 table 存储,然后用 concat 链接
-		-- 暂用内存比第一种方法小
-		local t = {}
-		for line in io.lines() do
-			t[#t + 1] = line
-		end
-		s = table.concat(t, "\n") .. "\n"
+    -- 读取整个文件
+    io.read("*all")
+
+    -- 用 table 存储,然后用 concat 链接
+    -- 暂用内存比第一种方法小
+    local t = {}
+    for line in io.lines() do
+      t[#t + 1] = line
+    end
+    s = table.concat(t, "\n") .. "\n"
+    ```
 
 84. 在 Lua 中,只能设置 table 的元表 (metatable),若要设置其他类型的值的元表,则必须通过 C 代码来完成。通过元表和元方法来实现 table 的操作,比如加法减法。
