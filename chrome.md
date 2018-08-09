@@ -30,6 +30,9 @@
 
 - Ctrl + L 清空 Console
 
+## 离线安装扩展
+
+进入扩展程序页面，打开开发者模式，macOS 上可以直接拖入 zip 包安装，Windows 上解压后，加载解压的扩展（加载已解压的扩展程序/Load unpacked）。crx 扩展的可以直接改后缀类似操作。可用 [octotree](https://github.com/buunguyen/octotree) 作为上手示例，提供了 zip 和 crx。
 
 ## 参考/资源
 
