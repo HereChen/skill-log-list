@@ -6,6 +6,19 @@
 2. <https://www.rstudio.com/>
 3. [cheatsheet](https://www.rstudio.com/resources/cheatsheets/)
 
+## 常用命令
+
+```bash
+# 清除 x 和 y 在工作空间中的数据
+rm(x, y)
+
+# 清除所有数据
+rm(list=ls())
+
+# 保存工作空间, 参数可为保存的文件路径
+save.image()
+```
+
 ## 基本用法
 
 - 安装包: `install.packages("rjson")`
