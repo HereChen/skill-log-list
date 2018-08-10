@@ -25,6 +25,13 @@
 
 ## JSON 处理
 
-```r
+```bash
 install.packages("rjson")
+```
+
+```r
+library('rjson')
+setwd('设置工作路径')
+result <- fromJSON(file = 'data.json')
+print(result)
 ```
