@@ -161,7 +161,19 @@ pull -> merge -> 修改冲突
 2. 合并 develop 到 master: git merge develop
 3. 提交(git bash 中 Esc+Shift, wq 保存退出), git push 上传
 
-### Tips
+### commit
+
+1. 修改提交的信息: `git commit --amend`
+
+## Tips
+
+### commit 叠加到远程分支上
+
+即把本地的 commit，放到 pull 下来最后一个 commit 后面。
+
+```bash
+git pull --rebase
+```
 
 ### 多个 git 账户 ssh 配置
 
@@ -226,10 +238,6 @@ git config --global core.editor vim
 ```bash
 git config core.ignorecase false
 ```
-
-### commit
-
-1. 修改提交的信息: `git commit --amend`
 
 ## 参考资料
 
