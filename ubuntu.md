@@ -1,8 +1,37 @@
+# Ubuntu
 
+## 初始
 
-- command alias: `alias ll='ls -la'`
-- root: `sudo su -`
-- run program background: `firefox &`
+1. 添加中文输入法。
+2. 更改软件源为国内的。
+3. 创建软连接，指向其他的硬盘。
+4. 安装常用软件
+
+    ```text
+    Chrome Dev 版本
+    Visual Studio Code
+    Intellij Idea
+    JDK
+    maven
+    ```
+
+## command
+
+```bash
+# 更新软件
+sudo apt update
+sudo apt upgrade
+
+# command alias
+alias ll='ls -la'
+
+# root
+sudo su -
+
+# run program background
+firefox &
+```
+
 - clc: `clear`
 - help: `ls --help`
 - help: `man ls` `info`
