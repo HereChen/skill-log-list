@@ -28,3 +28,7 @@ mvn --version
 ### 工程结构
 
 ### 工程创建
+
+## 注册中心
+
+注册中心工具：zookeeper，Nacos，redis。
