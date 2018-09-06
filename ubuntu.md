@@ -2,18 +2,21 @@
 
 ## 初始
 
-1. 添加中文输入法。
-2. 更改软件源为国内的。
-3. 创建软连接，指向其他的硬盘。
-4. 安装常用软件
+1. 安装常用软件
 
     ```text
-    Chrome Dev 版本
-    Visual Studio Code
-    Intellij Idea
-    JDK
-    maven
+    # Chrome Dev 版本
+    # Visual Studio Code
+    # Intellij Idea
+    # JDK
+    sudo apt install ibus-pinyin
+    sudo apt install maven
+    sudo apt install git
     ```
+
+2. 添加中文输入法。
+3. 更改软件源为国内的。
+4. 创建软连接，指向其他的硬盘。
 
 ## command
 
