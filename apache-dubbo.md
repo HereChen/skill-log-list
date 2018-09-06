@@ -20,6 +20,10 @@
 3. Maven 安装(`sudo apt install maven`)
 4. zookeeper 安装
 
+    ```bash
+    wget http://apache.01link.hk/zookeeper/stable/zookeeper-3.4.12.tar.gz
+    ```
+
 ```bash
 java --version
 mvn --version
