@@ -76,6 +76,9 @@ tar xfzv mytar.tar.gz
 
 # tar: unpack to destination
 tar xfzv mytar.tar.gz -C /folder/
+
+# exploer open folder
+nautilus /folder/
 ```
 
 ### sharing file
