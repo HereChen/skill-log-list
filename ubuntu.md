@@ -12,16 +12,21 @@
     sudo apt install ibus-pinyin
     sudo apt install maven
     sudo apt install git
+    sudo apt install vim
+    sudo apt install curl
+
+    # lenovo-k20 ubuntu 18.04
+    # sudo apt install intel-microcode
     ```
 
-2. 添加中文输入法。
+2. 添加中文输入法（先安装 `sudo apt install ibus-pinyin`，再添加中文语言，再添加输入法）。
 3. 更改软件源为国内的。
 4. 创建软连接，指向其他的硬盘。
 
 ## command
 
 ```bash
-# 更新软件
+# update
 sudo apt update
 sudo apt upgrade
 
@@ -33,28 +38,49 @@ sudo su -
 
 # run program background
 firefox &
+
+# clear terminal
+clear
+
+# check var
+echo $shell
+
+# list every file
+ls -la
+
+# help
+man ls
+
+# list similar
+ls myfile*
+
+# create file
+touch filename
+
+# locating files
+which perl
+sudo / -name "*log*" -print
+
+# create a var
+export PATH=$PATH:~/bin
+
+# zip
+zip myfile.zip ./*
+zip myfile.zip myfile
+
+# tar: compression tar
+tar cfzv mytar.tar.gz myfile
+
+# tar: unpack
+tar xfzv mytar.tar.gz
+
+# tar: unpack to destination
+tar xfzv mytar.tar.gz -C /folder/
 ```
 
-- clc: `clear`
-- help: `ls --help`
-- help: `man ls` `info`
-- check var.: `echo $shell`
-- internet Apps: pidgin thunderbird
-- list every file: `ls -a`,`ls -la`
-- list similar: `ls myfile*`
-- create file: `touch filename`
-- file permissions: use `chmod`
-- copy: `cp filename drectory`
-- move: `mv filename drectory`
-- create a var: `export PATH=$PATH:~/bin`
-- locating files: `which perl`, `sudo / -name "*log*" -print`
-- redirection: `ls > ls.txt`, `ls >> ls.ntxt`
-- shart file: `cat .bashrc`
-- edit file: `nano file`,`vi file`
-- compression zip: `zip myfile.zip ./*`, `zip myfile.zip myfile`
-- compression tar: `tar cfzv mytar.tar.gz myfile`
-- uncompression: `tar xfzv mytar.tar.gz`
+### sharing file
 
-### sharing file:
-- `sudo vi /edc/samba/smb.conf`
-- `sudo service samba restart`
+```bash
+sudo vi /edc/samba/smb.conf
+sudo service samba restart
+```
