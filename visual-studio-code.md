@@ -20,6 +20,15 @@
 }
 ```
 
+如果用的 Windows 内嵌 Linux，配置如下
+
+```json
+{
+    "git.path": "D:\\apps\\Git\\bin\\git.exe",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+}
+```
+
 ### zsh 配置
 
 VSCode 设置参数，注意 zsh 启动时不要设置默认路径，设置后 VSCode 不能进入当前文件夹下。zsh 的安装步骤在 windows 一节中。
