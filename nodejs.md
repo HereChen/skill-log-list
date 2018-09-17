@@ -59,3 +59,19 @@ sudo apt-get install -y nodejs
     sudo ln -s /usr/local/node/lib /usr/lib/node
     sudo ln -s /usr/local/node/bin/npm /usr/bin/npm
     ```
+
+## nvm
+
+```bash
+# 安装 nvm
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+
+# 安装 nodejs
+nvm install v8.12.0
+
+# 切换版本
+nvm use v8.12.0
+
+# 设置默认版本
+nvm alias default v10.10.0
+```
