@@ -28,5 +28,5 @@ use test
 db.addUser('user','123456');
 
 # 链接数据库
-mongo 168.11.125.149:27017/test
+mongo 127.0.0.1:27017/test
 ```
