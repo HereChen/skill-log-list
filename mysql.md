@@ -112,6 +112,33 @@ chown -R mysql:mysql /var/lib/mysql
 newgrp mysql
 ```
 
+## 安装(docker)
+
+```bash
+# simple
+docker pull mysql:latest
+
+docker run --name mysql -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 -d mysql:latest
+
+# 测试是否安装成功
+docker exec -it 2d79a3cd70ff /bin/bash
+mysql -hlocalhost -p3306 -uroot -p
+
+# TODO: 客户端链接
+# ALTER user 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
+# FLUSH PRIVILEGES;
+```
+
+## command
+
+```bash
+# 列出所有数据库
+show databases;
+
+# 创建数据库
+CREATE DATABASE doc;
+```
+
 ## Tips
 
 1. 远程数据库复制到本地, 密码复杂的用双引号括起来(否则会报错).

@@ -107,6 +107,19 @@ ENV NAME World
 CMD ["python", "app.py"]
 ```
 
+## Docker Hub
+
+> <https://hub.docker.com/>
+
+```bash
+# 检索 hub 上的 mysql
+docker search mysql
+
+# 获取 image
+# docker pull <host>/<project>/<repo>:<tag>
+docker pull mysql:latest
+```
+
 ## 问题
 
 1. 如何更新应用
