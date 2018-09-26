@@ -1,5 +1,7 @@
 # mysql
 
+## 安装(Windows)
+
 1. 下载: <https://dev.mysql.com/downloads/mysql/>
 2. 安装: <http://blog.csdn.net/darling_for/article/details/79070353>
 
@@ -36,7 +38,82 @@
     flush privileges
     ```
 
-3. 远程数据库复制到本地, 密码复杂的用双引号括起来(否则会报错).
+## 安装(Linux)
+
+```bash
+# 各种问题....
+# https://dev.mysql.com/doc/refman/8.0/en/binary-installation.html
+cd /opt
+wget https://cdn.mysql.com//Downloads/MySQL-8.0/mysql-8.0.12-linux-glibc2.12-x86_64.tar.xz
+
+# Create a mysql User and Group
+groupadd mysql
+useradd -r -g mysql -s /bin/false mysql
+
+# Obtain and Unpack the Distribution
+cd /usr/local
+tar xvf /opt/mysql-8.0.12-linux-glibc2.12-x86_64.tar.xz
+ln -s mysql-8.0.12-linux-glibc2.12-x86_64 mysql
+
+# add path
+vim ~/.bashrc
+# export PATH=$PATH:/usr/local/mysql/bin
+
+cd mysql
+mkdir mysql-files
+chown mysql:mysql mysql-files
+chmod 750 mysql-files
+
+# log
+mkdir /var/log/mariadb
+chown -R mysql:mysql /var/log/mariadb/
+mkdir /var/run/mariadb
+chown -R mysql:mysql /var/run/mariadb/
+
+ln -s /var/lib/mysql/mysql.sock /tmp/mysql.sock
+
+# 配置文件位置
+# /etc/my.cnf
+
+# 初始化
+mysqld --initialize --user=mysql --basedir=/usr/local/mysql --datadir=/usr/local/mysql/data
+
+mysql_ssl_rsa_setup
+
+# 启动
+mysqld_safe --user=mysql &
+```
+
+## 安装(yum)
+
+```bash
+# 安装说明 https://dev.mysql.com/doc/mysql-yum-repo-quick-guide/en/
+# 下载 https://dev.mysql.com/downloads/repo/yum/
+cd /opt
+wget https://repo.mysql.com//mysql80-community-release-el7-1.noarch.rpm
+rpm -Uvh mysql80-community-release-el7-1.noarch.rpm
+yum install mysql-community-server
+
+# 启动
+service mysqld start
+
+# 查看运行状态
+service mysqld status
+
+# 开机启动
+systemctl enable mysqld
+systemctl daemon-reload
+
+# other
+chown -R mysql:mysql /var/lib/mysql
+
+# 用户组切换
+newgrp mysql
+```
+
+## Tips
+
+1. 远程数据库复制到本地, 密码复杂的用双引号括起来(否则会报错).
 
     ```bash
     # [MySQL:将远程服务器的数据库拷到本地/复制他人数据库](http://blog.csdn.net/ycisacat/article/details/52587529)
