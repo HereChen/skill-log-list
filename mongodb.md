@@ -25,7 +25,7 @@ use test_db
 
 # 配置用户
 use test
-db.addUser('user','123456');
+db.createUser({user: "user",pwd: "123456",roles: [ { role: "userAdmin", db: "test" } ]})
 
 # 链接数据库
 mongo 127.0.0.1:27017/test
