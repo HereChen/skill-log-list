@@ -87,6 +87,7 @@ mysqld_safe --user=mysql &
 ## 安装(yum)
 
 ```bash
+# 各种问题
 # 安装说明 https://dev.mysql.com/doc/mysql-yum-repo-quick-guide/en/
 # 下载 https://dev.mysql.com/downloads/repo/yum/
 cd /opt
