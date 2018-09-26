@@ -29,6 +29,9 @@ sudo yum install docker-ce
 
 sudo systemctl start docker
 sudo docker run hello-world
+
+# 开机启动
+systemctl enable docker
 ```
 
 ## 基本命令
