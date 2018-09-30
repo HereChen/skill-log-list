@@ -133,11 +133,14 @@ mysql -hlocalhost -p3306 -uroot -p
 
 [download](https://dev.mysql.com/downloads/mysql/)
 
-8.x 下载 DMG 文件，安装后设置密码并立即启动服务，都是界面化操作。安装好后设置软连接即可使用。
+1. 8.x 下载 DMG 文件，安装后设置密码并立即启动服务，都是界面化操作。安装好后设置软连接即可使用。
+2. 建立软连接
 
-```bash
-sudo ln -s /usr/local/mysql/bin/mysql /usr/local/bin/mysql
-```
+    ```bash
+    sudo ln -s /usr/local/mysql/bin/mysql /usr/local/bin/mysql
+    ```
+
+3. GUI 工具[sequelpro](https://sequelpro.com), VSCode 可用 [vscode-mysql](https://github.com/formulahendry/vscode-mysql).
 
 ## command
 
