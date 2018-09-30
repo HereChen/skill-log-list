@@ -129,6 +129,16 @@ mysql -hlocalhost -p3306 -uroot -p
 # FLUSH PRIVILEGES;
 ```
 
+## 安装(macOS)
+
+[download](https://dev.mysql.com/downloads/mysql/)
+
+8.x 下载 DMG 文件，安装后设置密码并立即启动服务，都是界面化操作。安装好后设置软连接即可使用。
+
+```bash
+sudo ln -s /usr/local/mysql/bin/mysql /usr/local/bin/mysql
+```
+
 ## command
 
 ```bash
