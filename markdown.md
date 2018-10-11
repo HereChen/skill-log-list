@@ -13,3 +13,7 @@
 
 1. [pandoc](http://pandoc.org/) Markdown 与其他格式的转换.
 2. [kramdown](https://kramdown.gettalong.org/) Markdown 解析器，对 Markdown 进行了一些扩展，比如可以在代码块后注明语言 `{: .language-ruby}`。
+
+## idea
+
+1. !!![SystemsApproach/book](https://github.com/SystemsApproach/book) 一个 repo 存放其他 repo 的链接，并实现一处编译其他 repo 的 book，可用一套编译配置。
