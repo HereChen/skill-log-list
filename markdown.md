@@ -17,4 +17,4 @@
 ## idea/方案
 
 1. !!![SystemsApproach/book](https://github.com/SystemsApproach/book) 一个 repo 存放其他 repo 的链接，并实现一处编译其他 repo 的 book，可用一套编译配置。
-2. Web 书籍展示 [GitbookIO/gitbook](https://github.com/GitbookIO/gitbook), 案例 [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/)
+2. Web 书籍展示 [GitbookIO/gitbook](https://github.com/GitbookIO/gitbook), 案例 [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/), [FrontendMasters/front-end-handbook-2018](https://github.com/FrontendMasters/front-end-handbook-2018)
