@@ -16,10 +16,11 @@
 
 条件: 手机和PC链接同一个局域网(同一个 Wifi).
 
-1.允许 Fiddler 程序通过防火墙(Windows: 控制面板->防火墙->允许程序...).
-2.Fiddler tools -> options -> HTTPS 和 Connections 下设置允许, Connections 下端口设置为 8888.
-3.手机配置所连接的 Wifi 的 HTTP 代理为手动, IP 设置为 PC 的 IP, 端口设置为 8888.
-4. 手机端进入浏览器, 进入 `http://IP:8888`, 安装证书.
+1. [Windows] 允许 Fiddler 程序通过防火墙(Windows: 控制面板->防火墙->允许程序...).
+2. [Fiddler-HTTPS] Fiddler tools -> options -> HTTPS(Decrypt HTTPS traffic) 和 
+3. [Fiddler-允许远程访问] Fiddler tools -> options -> Connections(Allow remote computers to connect) 下设置允许, Connections 下端口设置为 8888.
+4. [手机-Wifi代理] 手机配置所连接的 Wifi 的 HTTP 代理为手动, IP 设置为 PC 的 IP, 端口设置为 8888.
+5. [手机-证书] 手机端进入浏览器, 进入 `http://IP:8888`, 安装证书.
 
 备注:
 
