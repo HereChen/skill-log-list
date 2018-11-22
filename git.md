@@ -175,37 +175,45 @@ pull -> merge -> 修改冲突
 git pull --rebase
 ```
 
+### 修改历史 commit 信息
+
+1. 只修改最后一条: `git commit --amend`
+2. 修改多条(比如最后 3 条, 或倒数第 3 条)
+    * `git rebase -i HEAD~3`, 然后把要修改.
+    * 把需要修改的 commit 前面的 `pick` 改为 `reword`, 保存退出.
+    * 逐个修改 commit 信息.
+
 ### 多个 git 账户 ssh 配置
 
 1. 为每个账户生成 ssh 公钥和私钥
 
-```bash
-cd ~/.ssh/
+    ```bash
+    cd ~/.ssh/
 
-# github, key 存储文件名输入 id_rsa_github
-ssh-keygen -t rsa -C chenlei.here@qq.com
+    # github, key 存储文件名输入 id_rsa_github
+    ssh-keygen -t rsa -C chenlei.here@qq.com
 
-# gitee, key 存储文件名输入 id_rsa_gitee
-ssh-keygen -t rsa -C chenlei.here@qq.com
-```
+    # gitee, key 存储文件名输入 id_rsa_gitee
+    ssh-keygen -t rsa -C chenlei.here@qq.com
+    ```
 
 2. 配置 config 文件
 
-```bash
-touch config
-# config 文件内容如下
-# Host github.com
-#     HostName github.com
-#     IdentityFile ~/.ssh/id_rsa_github
-#     PreferredAuthentications publickey
-#     User HereChen
+    ```bash
+    touch config
+    # config 文件内容如下
+    # Host github.com
+    #     HostName github.com
+    #     IdentityFile ~/.ssh/id_rsa_github
+    #     PreferredAuthentications publickey
+    #     User HereChen
 
-# Host gitee.com
-#     HostName gitee.com
-#     IdentityFile ~/.ssh/id_rsa_gitee
-#     PreferredAuthentications publickey
-#     User HereChen
-```
+    # Host gitee.com
+    #     HostName gitee.com
+    #     IdentityFile ~/.ssh/id_rsa_gitee
+    #     PreferredAuthentications publickey
+    #     User HereChen
+    ```
 
 ### Git 别名
 
@@ -241,4 +249,4 @@ git config core.ignorecase false
 
 ## 参考资料
 
-- [https://github.com/progit/progit](https://github.com/progit/progit)
+* [https://github.com/progit/progit](https://github.com/progit/progit)
