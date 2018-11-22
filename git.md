@@ -183,6 +183,17 @@ git pull --rebase
     * 把需要修改的 commit 前面的 `pick` 改为 `reword`, 保存退出.
     * 逐个修改 commit 信息.
 
+### `git pull --rebase` 冲突解决
+
+```bash
+git pull --rebase
+# 发现冲突
+# 解决冲突
+git add .
+git rebase --continue
+git push
+```
+
 ### 多个 git 账户 ssh 配置
 
 1. 为每个账户生成 ssh 公钥和私钥
