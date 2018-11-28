@@ -160,3 +160,10 @@ CREATE DATABASE doc;
     # [MySQL:将远程服务器的数据库拷到本地/复制他人数据库](http://blog.csdn.net/ycisacat/article/details/52587529)
     mysqldump -h '114.212.111.123' -uTHATUSER -pTHATPWD --opt --compress THATDB --skip-lock-tables | mysql -h localhost -uMYUSER -pMYPWD MYDB`
     ```
+
+2. 备份数据库
+
+    ```bash
+    # mysqldump -hIP -PPORT -uUSERNAME -pPASSWORD 数据库名 > 数据库名.sql;
+    mysqldump -h114.212.111.123 -P3306 -uroot -p8888 doc > doc.sql;
+    ```
