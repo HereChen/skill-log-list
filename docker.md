@@ -55,7 +55,7 @@ docker image ls
 # 查看 container
 docker container ls
 
-# 运行容器
+# 运行容器(创建并运行)
 docker run hello-world
 
 # stop container
