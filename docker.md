@@ -46,6 +46,9 @@ docker info
 # 查看运行的实例（container）
 docker ps
 
+# 查看所有实例（container）
+docker ps -a
+
 # 查看下载的 image（container 是 image 的实例）
 docker image ls
 
@@ -58,6 +61,7 @@ docker run hello-world
 # stop container
 # 最后一个参数是 container id，可通过 docker container ls 查找
 docker container stop 1fa4ab2cf395
+# docker container start 1fa4ab2cf395
 ```
 
 ## 创建 image
