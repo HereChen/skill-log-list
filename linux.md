@@ -25,3 +25,4 @@
 - docker 安装: `curl -sSL https://get.docker.com/ | sh`
 - 查看当前系统 IP: `ifconfig -a`
 - 安装 ifconfig(CentOS): `sudo yum install net-tools`
+- SSH 登录, `.ssh` 下有多个 rsa情况下用后者: `ssh root@host`, `ssh -o PubkeyAuthentication=no root@host`
