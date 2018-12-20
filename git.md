@@ -224,7 +224,7 @@ git push
     #     User HereChen
     ```
 
-3. keychain 将 key 添加到 agent (避免 ssh-agent ssh-add 的方式添加)
+3. keychain 将 key 添加到 agent (避免 ssh-agent ssh-add 的方式添加) [QuickTips](https://help.ubuntu.com/community/QuickTips)
 
     ```bash
     sudo apt install keychain
