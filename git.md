@@ -216,14 +216,22 @@ git push
     # Host github.com
     #     HostName github.com
     #     IdentityFile ~/.ssh/id_rsa_github
-    #     PreferredAuthentications publickey
     #     User HereChen
 
     # Host gitee.com
     #     HostName gitee.com
     #     IdentityFile ~/.ssh/id_rsa_gitee
-    #     PreferredAuthentications publickey
     #     User HereChen
+    ```
+
+3. keychain 将 key 添加到 agent (避免 ssh-agent ssh-add 的方式添加)
+
+    ```bash
+    sudo apt install keychain
+    # zsh 下修改 vim ~/.zshrc
+    vim ~/.bashrc
+    # keychain id_rsa id_dsa
+    # . ~/.keychain/`uname -n`-sh
     ```
 
 ### Git 别名
