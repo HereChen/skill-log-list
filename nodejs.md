@@ -60,7 +60,7 @@ sudo apt-get install -y nodejs
     sudo ln -s /usr/local/node/bin/npm /usr/bin/npm
     ```
 
-## nvm
+## 版本切换(nvm)
 
 ```bash
 # 安装 nvm
