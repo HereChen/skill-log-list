@@ -61,3 +61,7 @@ vim ~/.zshrc
 #   ssh-add -l
 # fi
 ```
+
+## 资源
+
+1. git bash 添加更多的 Linux 命令: [How to add more to Git Bash on Windows](https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058)
