@@ -3,7 +3,11 @@
 > [docs.docker.com](https://docs.docker.com)
 > [docker-cheat-sheet](https://github.com/wsargent/docker-cheat-sheet)
 
-## 安装(CentOS)
+## install
+
+> <https://docs.docker.com/install/linux/docker-ce/ubuntu/>
+
+### CentOS install
 
 ```bash
 # Install using the repository
@@ -32,6 +36,26 @@ sudo docker run hello-world
 
 # 开机启动
 systemctl enable docker
+```
+
+### Ubuntu (18.10 x64) install
+
+```bash
+# Set up the repository
+sudo apt update
+sudo apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+
+# Install Docker CE
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io
+
+# demo
+sudo docker run hello-world
 ```
 
 ## 基本命令
