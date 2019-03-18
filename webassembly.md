@@ -62,3 +62,17 @@ node a.out.js
 # 生成 html 运行模板
 emcc hello_world.c -o hello.html
 ```
+
+**wabt** wat(具有可读性的文件) 和 wasm 格式转换工具.
+
+```bash
+git clone --recursive git@github.com:WebAssembly/wabt.git
+cd wabt
+mkdir build
+cd build
+cmake ..
+make
+
+wat2wasm test.wat -o test.wasm
+wasm2wat test.wasm -o test.wat
+```
