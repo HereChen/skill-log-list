@@ -24,10 +24,12 @@ cd emsdk
 
 ./emsdk activate latest
 
+# 每次重启 terminal 都要执行
 source ./emsdk_env.sh
 
 # 验证安装
 emcc -v
+em++ -v
 ```
 
 tips: `lkgr.json` 下载失败, 可手动下载后复制到 `upstream` 文件下.
