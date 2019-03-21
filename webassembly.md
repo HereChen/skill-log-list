@@ -53,8 +53,12 @@ int main() {
 ```
 
 ```bash
+# https://emscripten.org/docs/compiling/Building-Projects.html#emscripten-build-output-files
 # 编译
 emcc hello_world.c
+emcc hello_world.c -o hello.wasm
+# 生成 wasm 和 对应运行的 js
+emcc hello_world.c -o hello.js
 
 # node 执行
 node a.out.js
