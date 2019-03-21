@@ -67,6 +67,8 @@ node a.out.js
 emcc hello_world.c -o hello.html
 ```
 
+加载 emcc 生成的 js 后, 可通过 Module.asm 查看暴露的函数.
+
 **wabt** wat(具有可读性的文件) 和 wasm 格式转换工具.
 
 ```bash
