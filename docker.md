@@ -61,6 +61,11 @@ sudo docker run hello-world
 ## 基本命令
 
 ```bash
+# 启动 docker
+systemctl start docker
+# 关闭 docker
+systemctl stop docker
+
 # 查看版本
 docker --version
 
