@@ -157,3 +157,7 @@ docker pull mysql:latest
 
 1. 如何更新应用
 2. 如何更新容器内软件配置
+
+## 资源
+
+1. [yeasy/docker_practice](https://github.com/yeasy/docker_practice)
