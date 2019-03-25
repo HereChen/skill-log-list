@@ -82,3 +82,68 @@ make
 wat2wasm test.wat -o test.wasm
 wasm2wat test.wasm -o test.wat
 ```
+
+## Appendix
+
+### emsdk
+
+```bash
+.
+├── Dockerfile
+├── LICENSE
+├── README.md
+├── bin
+│   └── elevate.exe
+├── binaryen-tags.txt
+├── clang
+│   ├── fastcomp
+│   │   ├── build_incoming_64
+│   │   └── src
+│   └── tag-e1.38.29
+│       ├── build_tag-e1.38.29_64
+│       └── src
+├── emcmdprompt.bat
+├── emscripten-tags.txt
+├── emsdk
+├── emsdk.bat
+├── emsdk.ps1
+├── emsdk_env.bat
+├── emsdk_env.ps1
+├── emsdk_env.sh
+├── emsdk_manifest.json
+├── emsdk_set_env.sh
+├── fastcomp
+│   └── 3941
+│       ├── Wack.cmake
+│       ├── bin
+│       ├── cmake
+│       ├── emscripten
+│       ├── emscripten_config
+│       ├── emscripten_config_sanity
+│       ├── emscripten_config_vanilla
+│       ├── emscripten_config_vanilla_sanity_wasm
+│       ├── fastcomp
+│       ├── include
+│       ├── lib
+│       ├── libexec
+│       ├── share
+│       └── sysroot
+├── node
+│   └── 8.9.1_64bit
+│       ├── CHANGELOG.md
+│       ├── LICENSE
+│       ├── README.md
+│       ├── bin
+│       ├── etc
+│       ├── include
+│       ├── lib
+│       └── share
+├── tree.md
+├── upstream
+│   └── lkgr.json
+└── zips
+    ├── 3941-wasm-binaries.tbz2
+    ├── clang-e1.38.29.tar.gz
+    ├── llvm-e1.38.29.tar.gz
+    └── node-v8.9.1-linux-x64.tar.xz
+```
