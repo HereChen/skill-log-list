@@ -29,7 +29,7 @@ touch /etc/docker/daemon.json
 
 ```json
 {
-  "registry-mirrors": ["https://registry.docker-cn.com"]
+  "registry-mirrors": ["https://reg-mirror.qiniu.com"]
 }
 ```
 
@@ -44,6 +44,7 @@ docker run -it -p 8888:8888 tensorflow/tensorflow
 
 # 安装 2.0
 # sudo docker pull tensorflow/tensorflow:2.0.0a0-py3-jupyter
+# docker run -it -p 8888:8888 tensorflow/tensorflow:2.0.0a0-py3-jupyter
 ```
 
 ## 使用
