@@ -153,6 +153,21 @@ docker search mysql
 docker pull mysql:latest
 ```
 
+## 进入 container
+
+```bash
+# http://phase2.github.io/devtools/common-tasks/ssh-into-a-container/
+
+# 查看当前的 container
+docker ps
+
+# ssh 进入: 相当于远程进入服务器
+docker exec -it <container name> /bin/bash
+
+# 命令行进入: 相当于本地在服务器上执行命令
+docker-compose run <container name> <command>
+```
+
 ## 问题
 
 1. 如何更新应用
