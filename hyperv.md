@@ -17,6 +17,14 @@ sudo update-grub
 
 [How can I increase the Hyper-V display resolution?](https://superuser.com/questions/518484/how-can-i-increase-the-hyper-v-display-resolution)
 
+## Ubuntu Hyper-V generation 2
+
+generation 1 可以直接进行安装, generation 2 需要配置 Security Boot.
+
+1. 选择 generation 2.
+2. 设置完成后. Setting -> Security -> (Security Boot -> Template: Microsoft UEFI Certificate Authority).
+3. 打开配置的 Ubuntu, 进行安装.
+
 ## 小技巧
 
 1. Windows 屏幕大小设置：设置分辨率即可更改屏幕大小。
