@@ -169,6 +169,16 @@ docker exec -it <container-id> /bin/bash
 docker-compose run <container name> <command>
 ```
 
+## 镜像设置
+
+向 `/etc/docker/daemon.json` 文件添加如下内容
+
+```json
+{
+  "registry-mirrors": ["https://reg-mirror.qiniu.com"]
+}
+```
+
 ## 问题
 
 1. 如何更新应用
