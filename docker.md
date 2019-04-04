@@ -163,6 +163,7 @@ docker ps
 
 # ssh 进入: 相当于远程进入服务器
 docker exec -it <container name> /bin/bash
+docker exec -it <container-id> /bin/bash
 
 # 命令行进入: 相当于本地在服务器上执行命令
 docker-compose run <container name> <command>
