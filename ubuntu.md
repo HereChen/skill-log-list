@@ -87,3 +87,16 @@ nautilus /folder/
 sudo vi /edc/samba/smb.conf
 sudo service samba restart
 ```
+
+## 镜像替换
+
+```bash
+sudo vim /etc/apt/sources.list
+# us.archive.ubuntu.com 替换为 mirrors.aliyun.com
+# :%s/us\.archive\.ubuntu\.com/mirrors\.aliyun\.com/g
+
+# http://mirrors.aliyun.com/ubuntu/
+# http://mirrors.163.com/ubuntu/
+# http://mirrors.sohu.com/ubuntu/
+# http://mirrors.tuna.tsinghua.edu.cn
+```
