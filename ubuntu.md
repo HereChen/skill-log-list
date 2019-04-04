@@ -36,6 +36,9 @@ alias ll='ls -la'
 # root
 sudo su -
 
+# 设置 root 密码
+sudo passwd root
+
 # run program background
 firefox &
 
