@@ -9,11 +9,28 @@
 1. powercfg.exe /hibernate on
 2. 在电源设置里面勾选 hibernate ：Start -> System -> Power & sleep -> Additional power settings. -> Choose what the power button does -> Change settings that are currently unavailable -> 勾选Hibernate
 
-## 命令
+## CMD 命令
 
-1. 查看端口占用进程: `netstat -ano | findstr "8081"`
-2. 杀进程: `taskkill /pid XXXXXX`, 或者任务管理器关闭进程。
-3. 最新的 Windows 10 内置 OpenSSH，可直接使用 `ssh` 命令：`ssh username@IP`
+```bash
+# 查看端口占用进程
+netstat -ano | findstr "8081"
+
+# 杀进程
+taskkill /pid XXXXXX
+
+# SSH: Windows 10 可用
+ssh username@IP
+```
+
+## WSL 命令
+
+```bash
+# 打开当前目录
+explorer.exe .
+
+# 打开文件(默认程序): cmd.exe /C start main.pdf
+cmd.exe /C start <file>
+```
 
 ## Windows10 + Cmder + zsh
 
