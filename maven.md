@@ -20,3 +20,22 @@ vim ~/.bash_profile
 # PATH=$M2_HOME/bin:$PATH
 source ~/.bash_profile
 ```
+
+## 镜像设置
+
+在 `~/.m2/settings.xml` 文件增加 `mirrors` 配置, 如果文件不存在则创建.
+
+```xml
+<settings>
+  ...
+  <mirrors>
+    <mirror>
+      <id>alimaven</id>
+      <name>aliyun maven</name>
+      <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+      <mirrorOf>central</mirrorOf>
+    </mirror>
+  </mirrors>
+  ...
+</settings>
+```
