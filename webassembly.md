@@ -90,6 +90,10 @@ wasm2wat test.wasm -o test.wat
 
 ## Appendix
 
+### more reading
+
+1. [前端核心代码保护技术面面观](https://zhuanlan.zhihu.com/p/61651310)
+
 ### emsdk
 
 ```bash
