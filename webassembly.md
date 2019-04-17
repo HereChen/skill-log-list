@@ -83,6 +83,11 @@ wat2wasm test.wat -o test.wasm
 wasm2wat test.wasm -o test.wat
 ```
 
+## Use Case
+
+1. [fastq.bio, How We Used WebAssembly To Speed Up Our Web App By 20X (Case Study)](https://www.smashingmagazine.com/2019/04/webassembly-speed-web-app/)
+2. [Figma, WebAssembly cut Figma's load time by 3x](https://www.figma.com/blog/webassembly-cut-figmas-load-time-by-3x/)
+
 ## Appendix
 
 ### emsdk
