@@ -179,6 +179,15 @@ docker-compose run <container name> <command>
 }
 ```
 
+设置后重启
+
+```bash
+# https://docs.docker.com/registry/recipes/mirror/#use-case-the-china-registry-mirror
+# https://yeasy.gitbooks.io/docker_practice/content/install/mirror.html
+systemctl stop docker
+systemctl start docker
+```
+
 ## 问题
 
 1. 如何更新应用
