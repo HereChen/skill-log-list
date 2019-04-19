@@ -48,6 +48,9 @@ docker run -t -i trzeci/emscripten /bin/bash
 
 # 进入后查看版本
 emcc --version
+
+# 使用 docker 内 emsdk
+docker run --rm -v $(pwd):/src trzeci/emscripten emcc helloworld.cpp -o helloworld.js
 ```
 
 **demo**: `hello_world.c`
@@ -97,6 +100,46 @@ make
 
 wat2wasm test.wat -o test.wasm
 wasm2wat test.wasm -o test.wat
+```
+
+## Examples
+
+**导出 C++ 方法** JavaScript 调用 C++ 方法.
+
+```c++
+// export_cpp_method.cpp
+// https://emscripten.org/docs/porting/connecting_cpp_and_javascript/embind.html
+#include <emscripten.h>
+#include <emscripten/bind.h>
+
+double sum(double a, double b) {
+  return a + b;
+}
+
+// 导出 sum
+EMSCRIPTEN_BINDINGS(my_module){
+    emscripten::function("sum", &sum);
+}
+```
+
+```bash
+em++ -std=c++11 --bind -o export_cpp_method.js export_cpp_method.cpp
+# docker run --rm -v $(pwd):/src trzeci/emscripten em++ -std=c++11 --bind -o export_cpp_method.js export_cpp_method.cpp
+```
+
+```html
+<!-- export_cpp_method.html -->
+<!doctype html>
+<html>
+  <script>
+    var Module = {
+      onRuntimeInitialized: function() {
+        console.log('sum result: ' + Module.sum(2, 3));
+      }
+    };
+  </script>
+  <script src="export_cpp_method.js"></script>
+</html>
 ```
 
 ## Use Case
