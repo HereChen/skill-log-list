@@ -31,3 +31,4 @@ generation 1 可以直接进行安装, generation 2 需要配置 Security Boot.
 2. 快速建立虚拟机：可直接复制现有的 vhdx 虚拟机硬盘文件，然后导入。
 3. [Hyper-V 应用及使用](https://herechen.github.io/technology/hyper-v-application-and-usage/)
 4. 如果重启系统后, 虚拟机无法联网, 可尝试切换 External Network, 再切换回来.
+5. FileZilla 上传文件: File -> Site Manager... -> New Site -> Protocol 选择 SFTP 配置账号.
