@@ -39,6 +39,17 @@ tips: `lkgr.json` 下载失败, 可手动下载后复制到 `upstream` 文件下
 1. [Building projects on Travis CI](https://emscripten.org/docs/compiling/Travis.html)
 2. [trzeci/emscripten - Docker Hub](https://hub.docker.com/r/trzeci/emscripten)
 
+```bash
+# download
+docker pull trzeci/emscripten
+
+# enter docker container
+docker run -t -i trzeci/emscripten /bin/bash
+
+# 进入后查看版本
+emcc --version
+```
+
 **demo**: `hello_world.c`
 
 ```c
