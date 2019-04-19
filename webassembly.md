@@ -6,7 +6,7 @@ Go 语言上手 demo 比较容易. Emscripten 工具不易安装成功.
 
 > <https://emscripten.org>
 
-**install**: emscripten
+**install (directly)**: emscripten
 
 ```bash
 git clone https://github.com/emscripten-core/emsdk.git
@@ -33,6 +33,11 @@ em++ -v
 ```
 
 tips: `lkgr.json` 下载失败, 可手动下载后复制到 `upstream` 文件下.
+
+**install (docker)** 用 docker 安装工具.
+
+1. [Building projects on Travis CI](https://emscripten.org/docs/compiling/Travis.html)
+2. [trzeci/emscripten - Docker Hub](https://hub.docker.com/r/trzeci/emscripten)
 
 **demo**: `hello_world.c`
 
