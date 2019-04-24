@@ -266,6 +266,18 @@ git config --global core.editor vim
 git config core.ignorecase false
 ```
 
+### 子模块 (submodules)
+
+```bash
+https://git-scm.com/book/en/v2/Git-Tools-Submodules
+
+# 子模块添加
+git submodule add https://github.com/chaconinc/DbConnector localfolder_path
+
+# 子模块更新
+git submodule update --remote
+```
+
 ## 参考资料
 
 * [https://github.com/progit/progit](https://github.com/progit/progit)
