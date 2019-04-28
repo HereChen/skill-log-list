@@ -4,6 +4,8 @@
 
 > <http://adbshell.com/>
 
+**重启 ADB**
+
 ```bash
 # 启动 adb 服务
 adb start-server
@@ -11,6 +13,8 @@ adb start-server
 # 关闭 adb 服务
 adb kill-server
 ```
+
+**ADB Wifi 连接手机**
 
 ```bash
 # wifi 情况下 adb 连接手机
@@ -25,6 +29,12 @@ adb devices
 # refer
 # https://developer.android.google.cn/studio/command-line/adb
 # http://adbshell.com/commands/adb-connect
+```
+
+**抓取日志**
+
+```bash
+adb logcat
 ```
 
 ## Android Emulator DNS
