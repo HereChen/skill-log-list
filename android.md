@@ -37,6 +37,16 @@ adb devices
 adb logcat
 ```
 
+**安装 APK**
+
+```bash
+# 安装到默认设备
+adb install <PATH TO APK>
+
+# 安装到指定设备
+adb -s <DEVICE ID> install <PATH TO APK>
+```
+
 ## Android Emulator DNS
 
 ```bash
