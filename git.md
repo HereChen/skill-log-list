@@ -276,6 +276,12 @@ git submodule add https://github.com/chaconinc/DbConnector localfolder_path
 
 # 子模块更新
 git submodule update --remote
+
+# 删除子模块的修改
+git submodule foreach git reset --hard
+
+# 删除所有子模块的修改
+git submodule foreach --recursive git reset --hard
 ```
 
 ## 参考资料
