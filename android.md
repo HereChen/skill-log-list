@@ -47,6 +47,12 @@ adb install <PATH TO APK>
 adb -s <DEVICE ID> install <PATH TO APK>
 ```
 
+**端口映射** React Native 调试可用.
+
+```bash
+adb -s <DEVICE ID> reverse tcp:8081 tcp:8081
+```
+
 ## Android Emulator DNS
 
 ```bash
