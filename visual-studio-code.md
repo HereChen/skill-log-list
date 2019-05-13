@@ -1,14 +1,40 @@
 # Visual Studio Code
 
+## 常用快捷键
+
+以下是 Winidows 上的.
+
 快捷键 | 功能
 -----  | -----
+`Ctrl + X` | 打开 Extensions
+`Ctrl + Shift + G G` | 打开 Source Control
+`Ctrl + Shift + E` | 打开 Explorer
 `F11` | 全屏
 `Ctrl + F2` | 全选当前选中文本
 `Shift + Alt + Right Arrow` | 选中括号或引号之间的内容
+`Ctrl + K W` | 关闭全部编辑窗口
 
-## Bash 配置
+## 配置
 
-### Git Bash 配置
+```json
+{
+  "files.eol": "\n",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.wordWrap": "on",
+  "files.autoSave":"afterDelay",
+  "files.autoSaveDelay": 200,
+  "editor.detectIndentation": false,
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
+  "workbench.colorTheme": "One Dark Pro Vivid",
+  "editor.fontFamily": "Fira Code, Consolas, Noto Sans CJK SC, 'Courier New', monospace",
+  "workbench.activityBar.visible": false
+}
+```
+
+## Bash 配置: 选择配置你需要的 Bash
+
+**Git Bash**
 
 ```json
 {
@@ -20,7 +46,7 @@
 }
 ```
 
-如果用的 Windows 内嵌 Linux，配置如下
+**WSL** 如果用的 Windows 内嵌 Linux，配置如下
 
 ```json
 {
@@ -29,9 +55,7 @@
 }
 ```
 
-### zsh 配置
-
-VSCode 设置参数，注意 zsh 启动时不要设置默认路径，设置后 VSCode 不能进入当前文件夹下。zsh 的安装步骤在 windows 一节中。
+**zsh** VSCode 设置参数，注意 zsh 启动时不要设置默认路径(启动时进入)，设置后 VSCode 不能进入当前文件夹下。zsh 的安装步骤在 windows 一节中。
 
 ```json
 {
@@ -41,10 +65,22 @@ VSCode 设置参数，注意 zsh 启动时不要设置默认路径，设置后 V
 
 ## 常用插件
 
-1. 文件图标：vscode-icons。
-2. Markdown 校验：markdownlint。编辑时提示不符合规范的写法
-3. Markdown 目录显示：markdownlint。左侧根据 title 显示目录，适合内容较多时使用。
+* Markdown 校验：markdownlint。编辑时提示不符合规范的写法
+* Remote: Remote - SSH, Remote - WSL, Remote - Containers.
+* ESLint
+* npm
+* npm Intellisense
+* Path Intellisense
+* EditorConfig for VS Code
+
+```bash
+# install extension
+code --install-extension
+
+# uninstall extension
+code --uninstall-extension
+```
 
 ## 参考
 
-- [Key Bindings for Visual Studio Code](https://code.visualstudio.com/docs/customization/keybindings)
+* [Key Bindings for Visual Studio Code](https://code.visualstudio.com/docs/customization/keybindings)
