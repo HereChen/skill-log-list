@@ -4,7 +4,7 @@
 
 安装的方式包括: 从源码编译安装, 直接下载二进制, 依靠工具直接从库下载安装。
 
-### Linux 编译安装
+**Linux 编译安装**
 
 ```bash
 curl -o node-v10.0.0.tar.gz https://nodejs.org/dist/latest/node-v10.0.0.tar.gz
@@ -15,7 +15,7 @@ make
 make install
 ```
 
-### Linux 安装二进制文件
+**Linux 安装二进制文件**
 
 ```bash
 # 64bit node install
@@ -32,7 +32,7 @@ source ~/.bash_profile
 node -v
 ```
 
-### Ubuntu 安装
+**Ubuntu 安装**
 
 ubuntu 安装 nodejs, <https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions>
 
@@ -43,15 +43,15 @@ sudo apt-get install -y nodejs
 
 ## Tips
 
-1. 执行本地命令, <http://stackoverflow.com/questions/20643470/execute-a-command-line-binary-with-node-js>
-2. node_modules windows 上删除
+* 执行本地命令, <http://stackoverflow.com/questions/20643470/execute-a-command-line-binary-with-node-js>
+* node_modules windows 上删除
 
     ```bash
     npm install -g rimraf
     rimraf node_modules
     ```
 
-3. Ubuntu Bash 中 npm command not found
+* Ubuntu Bash 中 npm command not found
 
     ```bash
     sudo chmod 755 -R /usr/local/node/bin
@@ -59,6 +59,8 @@ sudo apt-get install -y nodejs
     sudo ln -s /usr/local/node/lib /usr/lib/node
     sudo ln -s /usr/local/node/bin/npm /usr/bin/npm
     ```
+
+* ES Modules 执行(mjs 后缀): `node --experimental-modules app.js`
 
 ## 版本切换(nvm)
 
