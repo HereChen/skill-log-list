@@ -8,3 +8,10 @@
 
 1. RTMP - TCP
 2. WebRTC - UDP
+
+## Tools
+
+```bash
+# flv -> mp4
+ffmpeg -i input.flv -codec copy output.mp4
+```
