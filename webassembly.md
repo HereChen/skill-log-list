@@ -2,7 +2,7 @@
 
 Go 语言上手 demo 比较容易. Emscripten 工具不易安装成功.
 
-## 工具
+## Tools
 
 * [Emscripten](https://github.com/emscripten-core/emscripten): C/C++ -> Webassembly
 * [MATLAB Coder](https://www.mathworks.com/products/matlab-coder.html): MATLAB -> C/C++
@@ -176,6 +176,10 @@ em++ -std=c++11 --bind -o export_cpp_method.js export_cpp_method.cpp
 2. [Figma, WebAssembly cut Figma's load time by 3x](https://www.figma.com/blog/webassembly-cut-figmas-load-time-by-3x/)
 3. [brion/ogv.js](https://github.com/brion/ogv.js): 音视频播放器.
 4. [Web端H.265播放器研发解密, 淘宝技术](https://mp.weixin.qq.com/s/ajLFM8q-4-2hxj-M_ChGdg)
+
+## Readings
+
+1. [Build your own WebAssembly Compiler, Colin Eberhardt, 2019-05-17](https://blog.scottlogic.com/2019/05/17/webassembly-compiler.html)
 
 ## Appendix
 
