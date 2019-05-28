@@ -74,6 +74,9 @@
 * EditorConfig for VS Code
 
 ```bash
+# 在当前窗口打开工程(覆盖已经打开的窗口)
+code -r folder
+
 # install extension
 code --install-extension
 
