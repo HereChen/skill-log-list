@@ -53,6 +53,25 @@ adb -s <DEVICE ID> install <PATH TO APK>
 adb -s <DEVICE ID> reverse tcp:8081 tcp:8081
 ```
 
+**自签名 HTTPS 证书服务访问**
+
+1. Android 工程配置允许系统或用户安装的证书: `android\app\src\main\res\xml\network_security_config.xml`
+
+    ```xml
+    <network-security-config>
+        <domain-config cleartextTrafficPermitted="true">
+            <domain includeSubdomains="true">localtest.com</domain>
+
+            <trust-anchors>
+                <certificates src="system" />
+                <certificates src="user" />
+            </trust-anchors>
+        </domain-config>
+    </network-security-config>
+    ```
+
+2. Android 手机设备安装生成的 cert 证书. 可将证书文件拷贝到手机存储器上, 从存储器上选择安装.
+
 ## Android Emulator DNS
 
 ```bash
