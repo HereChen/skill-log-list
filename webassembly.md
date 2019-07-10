@@ -176,6 +176,7 @@ em++ -std=c++11 --bind -o export_cpp_method.js export_cpp_method.cpp
 2. [Figma, WebAssembly cut Figma's load time by 3x](https://www.figma.com/blog/webassembly-cut-figmas-load-time-by-3x/)
 3. [brion/ogv.js](https://github.com/brion/ogv.js): 音视频播放器.
 4. [Web端H.265播放器研发解密, 淘宝技术](https://mp.weixin.qq.com/s/ajLFM8q-4-2hxj-M_ChGdg)
+5. [ColinEberhardt/wasm-mandelbrot](https://github.com/ColinEberhardt/wasm-mandelbrot) 分形图几种实现方式的对比。
 
 ## Readings
 
