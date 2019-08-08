@@ -123,7 +123,7 @@ wasm2wat test.wasm -o test.wat
 
 MATLAB 并不直接编译成 Webassembly, 但可以利用其编译成 C/C++ 的能力, 再利用 Emscripten 编译成 Webassembly. 流程:
 
-1. **代码生成**: (Windows) MATLAB Coder 工具, 将 MATLAB 代码编译成 C/C++. 生成的代码会包含 *.mk 文件, 为 Makefile 文件. 编译时如果选择 MATLAB host (当前电脑的环境), 会同时 *.bat 文件.
+1. **代码生成**: (Windows) MATLAB Coder 工具, 将 MATLAB 代码编译成 C/C++. 生成的代码会包含 *.mk 文件, 为 Makefile 文件. 编译时如果选择 MATLAB host (当前电脑的环境), 会同时生成 *.bat 文件.
 2. **编译获取 lib 文件**: 运行 *.bat 文件生成 *.lib 文件.
 3. **编写程序**: 引入 *.lib 文件编写程序. (TODO: lib 是 Windows平台的静态链接库, 须在 Windows 平台编译)
 4. **编译成 Webassembly**: 利用 Emscripten 编译.
