@@ -17,6 +17,10 @@ source ~/.barshrc
 julia -version
 ```
 
+## IDE
+
+1. [Juno](https://junolab.org)
+
 ## 基础
 
 ```julia
@@ -28,3 +32,7 @@ println(x);
 ```bash
 julia main.jl
 ```
+
+## 资料
+
+1. [Julia, my new friend for computing andoptimization?, Pierre Haessig, Lilian Besson, 2018](https://hal.archives-ouvertes.fr/cel-01830248/document)
