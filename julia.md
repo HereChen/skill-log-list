@@ -20,6 +20,7 @@ julia -version
 ## IDE
 
 1. [Juno](https://junolab.org)
+2. [JuliaPro](https://juliacomputing.com/products/juliapro.html)
 
 ## 基础
 
