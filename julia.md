@@ -24,14 +24,48 @@ julia -version
 
 ## 基础
 
+* 文件后缀 `.jl`。
+* Unicode 可以作为变量 `δ = √2`。
+
 ```julia
+# 一个简单的示例
 # main.jl
 x = 10;
 println(x);
 ```
 
+```julia
+# 允许 Markdown 注释
+"""
+这里注释
+"""
+```
+
 ```bash
+# 终端中执行
 julia main.jl
+```
+
+## 模块
+
+```julia
+# demo.jl
+include("./basic-demo.jl")
+@time MatrixDemo.print();
+```
+
+```julia
+module MatrixDemo
+    using LinearAlgebra
+
+    function print()
+      println("\nMatrixDemo");
+
+      A = [1 2 3; 4 1 6; 7 8 1];
+      println(det(A)) # 行列式
+      println(inv(A)) # 取逆矩阵
+    end
+end
 ```
 
 ## 资料
