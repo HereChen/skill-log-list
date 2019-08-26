@@ -12,5 +12,6 @@
 
 ## 相关资料
 
-1. [Mandelbulb.com](http://www.mandelbulb.com). Mandelbulb.com is an educational and informational site about the Mandelbulb in specific and 3D fractals in general.
-2. [deviantart](https://www.deviantart.com/popular-all-time/?section=&global=1&q=fractal). 一个图片网站, 上面有很多分形图片.
+* [Mandelbulb.com](http://www.mandelbulb.com). Mandelbulb.com is an educational and informational site about the Mandelbulb in specific and 3D fractals in general.
+* [deviantart](https://www.deviantart.com/popular-all-time/?section=&global=1&q=fractal). 一个图片网站, 上面有很多分形图片.
+* [Mandelbrot 集合，将 TensorFlow 应用于普通数学, 2018-12-11](https://www.tensorflowers.cn/t/7474)
