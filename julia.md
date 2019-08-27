@@ -26,6 +26,14 @@ julia -version
 
 * 文件后缀 `.jl`。
 * Unicode 可以作为变量 `δ = √2`。
+* 添加、删除、更新包
+
+    ```julia
+    using Pkg
+    Pkg.add("Plots")
+    Pkg.update("Plots")
+    Pkg.rm("Plots")
+    ```
 
 ```julia
 # 一个简单的示例
