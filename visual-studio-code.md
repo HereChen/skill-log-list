@@ -93,7 +93,7 @@ code --uninstall-extension
 code --install-extension jebbs.plantuml
 
 # (可选) 安装 graphviz, 某些图形需要
-# http://graphviz.org/download/
+# http://graphviz.org/download/, https://gitlab.com/graphviz/graphviz
 # Windows 下载安装 msi 文件
 brew install graphviz # macOS
 apt install graphviz  # Ubuntu
