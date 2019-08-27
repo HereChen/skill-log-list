@@ -86,6 +86,8 @@ code --uninstall-extension
 
 ## PlantUML
 
+用于绘制各种图，流程图、架构图、用例图、时序图、思维导图等等。支持的后缀格式：`*.wsd`、`*.pu`、`*.puml`、`*.plantuml`、`*.iuml`。
+
 ```bash
 # 安装扩展
 code --install-extension jebbs.plantuml
