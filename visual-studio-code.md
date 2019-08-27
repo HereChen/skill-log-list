@@ -84,6 +84,19 @@ code --install-extension
 code --uninstall-extension
 ```
 
+## PlantUML
+
+```bash
+# 安装扩展
+code --install-extension jebbs.plantuml
+
+# (可选) 安装 graphviz, 某些图形需要
+# http://graphviz.org/download/
+# Windows 下载安装 msi 文件
+brew install graphviz # macOS
+apt install graphviz  # Ubuntu
+```
+
 ## 参考
 
 * [Key Bindings for Visual Studio Code](https://code.visualstudio.com/docs/customization/keybindings)
