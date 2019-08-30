@@ -1,5 +1,7 @@
 # Windows
 
+## Windows 10 快捷键
+
 - (截屏)将选择区域图像复制到剪贴板: `Win + Shift + S`
 - 桌面切换: `Win + Ctrl + Left/Right`
 - 显示日期: `Win + Alt + D`
@@ -30,6 +32,9 @@ explorer.exe .
 
 # 打开文件(默认程序): cmd.exe /C start main.pdf
 cmd.exe /C start <file>
+
+# Ubuntu 升级
+sudo do-release-upgrade
 ```
 
 ## Windows10 + Cmder + zsh
