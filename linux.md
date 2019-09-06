@@ -1,5 +1,6 @@
 # Linux
 
+* `dig` 域名解析，可用于查看域名对应的 IP：`dig www.baidu.com`。
 * `awk`
 * 压缩: `zip -r myzip.zip ./*`
 * 解压: `unzip myzip.zip -d myzip`
