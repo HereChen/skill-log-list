@@ -22,6 +22,18 @@ julia -version
 1. [Juno](https://junolab.org)
 2. [JuliaPro](https://juliacomputing.com/products/juliapro.html)
 
+## 执行
+
+```bash
+# 在 bash 中执行
+$ julia filename.jl
+
+# 在 julia repl 中执行
+julia> 1 + 1
+# https://stackoverflow.com/a/22241095
+julia> include("C:\Users\chenl\.julia\packages\FFMPEG\9JQpZ\deps\build.jl")
+```
+
 ## 基础
 
 * 文件后缀 `.jl`。
@@ -34,7 +46,7 @@ julia -version
     Pkg.update("Plots")
     Pkg.rm("Plots")
 
-    # 安装失败重新安装
+    # 安装失败重新安装。有时候下载依赖会失败，可以根据错误，将依赖中的包手动下载下来放入对应的文件夹（build 文件也可能需要手动下载）
     Pkg.rm("Plots")
     Pkg.gc()
     Pkg.add("Plots")
