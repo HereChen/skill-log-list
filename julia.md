@@ -93,6 +93,23 @@ module MatrixDemo
 end
 ```
 
+## 绘图
+
+```julia
+using Plots
+
+include("./findzero.jl");
+
+x0 = 10;
+f(x) = x^2 - 2;
+x = FindZero.newton(f, x0);
+
+plot(f, 0, x0 + 1);
+# 在上面图的基础上绘制
+plot!(x, f.(x), legend=false, shape = [:circle]);
+plot!([x[end]], [f(x[end])], shape = [:utriangle], markersize=6);
+```
+
 ## 资料
 
 1. [Julia, my new friend for computing andoptimization?, Pierre Haessig, Lilian Besson, 2018](https://hal.archives-ouvertes.fr/cel-01830248/document)
