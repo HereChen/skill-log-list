@@ -33,6 +33,11 @@ julia -version
     Pkg.add("Plots")
     Pkg.update("Plots")
     Pkg.rm("Plots")
+
+    # 安装失败重新安装
+    Pkg.rm("Plots")
+    Pkg.gc()
+    Pkg.add("Plots")
     ```
 
 ```julia
