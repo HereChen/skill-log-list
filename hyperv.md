@@ -7,7 +7,7 @@ TODO: 启用后开启和关闭 Hyper-V。
 问题体现为，Ubuntu 分辨率设置显示为 `Unknow display`，不能更改分辨率。
 
 ```bash
-sudo apt-get install linux-image-extra-virtual
+sudo apt install linux-image-extra-virtual
 sudo gedit /etc/default/grub
 # 1920x1080 分辨率
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash video=hyperv_fb:1920x1080"
@@ -31,4 +31,4 @@ generation 1 可以直接进行安装, generation 2 需要配置 Security Boot.
 2. 快速建立虚拟机：可直接复制现有的 vhdx 虚拟机硬盘文件，然后导入。
 3. [Hyper-V 应用及使用](https://herechen.github.io/technology/hyper-v-application-and-usage/)
 4. 如果重启系统后, 虚拟机无法联网, 可尝试切换 External Network, 再切换回来.
-5. FileZilla 上传文件: File -> Site Manager... -> New Site -> Protocol 选择 SFTP 配置账号.
+5. FileZilla 上传文件: File -> Site Manager... -> New Site -> Protocol 选择 SFTP 配置账号。
