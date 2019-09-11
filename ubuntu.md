@@ -103,3 +103,16 @@ sudo vim /etc/apt/sources.list
 # http://mirrors.sohu.com/ubuntu/
 # http://mirrors.tuna.tsinghua.edu.cn
 ```
+
+## 桌面版启用 SSH 登录
+
+如果在虚拟机中安装 Ubuntu 桌面版，并且需要交换文件，启用 SSH 登录后，就可以通过 FileZilla 这类工具上传和下载文件，从而实现和虚拟机内的文件交换。
+
+```bash
+# 桌面版本有客户端，没有服务端
+sudo apt install openssh-server
+sudo apt install openssh-client
+# 配置位置 /etc/ssh/sshd_config
+
+sudo service ssh restart
+```
