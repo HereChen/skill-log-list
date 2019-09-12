@@ -1,9 +1,6 @@
 # Markdown
 
-## 语法
-
-1. [CommonMark](http://commonmark.org/), [commonmark/CommonMark](https://github.com/commonmark/CommonMark), 不包含表格(table)和脚注(footnote)。
-2. [GitHub Flavored Markdown](https://github.github.com/gfm/)，基于 CommonMark，包含扩展的表格，但不包含脚注。
+<https://herechen.github.io/technology/all-about-markdown/>
 
 ## 书写规范
 
