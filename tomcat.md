@@ -17,7 +17,9 @@ sudo tar xf /tmp/apache-tomcat-9*.tar.gz -C /opt/tomcat
 # catalina命令 在安装目录的 bin 文件夹下
 # 启动
 ./catalina start
+./startup.sh
 
 # 停止
 ./catalina stop
+./shutdown.sh
 ```
