@@ -5,6 +5,9 @@
 yum -y install mariadb-server mariadb
 sudo systemctl start mysqld
 service mariadb start
+
+# 初始化(设置密码)
+sudo mysql_secure_installation
 ```
 
 ## 安装(Windows)
