@@ -1,5 +1,12 @@
 # mysql
 
+```bash
+# TODO: mariadb
+yum -y install mariadb-server mariadb
+sudo systemctl start mysqld
+service mariadb start
+```
+
 ## 安装(Windows)
 
 1. 下载: <https://dev.mysql.com/downloads/mysql/>

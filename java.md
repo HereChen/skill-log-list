@@ -22,3 +22,9 @@ update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-10-openjdk-am
 update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/java-10-openjdk-amd64/bin/javac 1
 update-alternatives --config java
 ```
+
+**OpenJDK CentOS**
+
+```bash
+yum install java-1.8.0-openjdk
+```
