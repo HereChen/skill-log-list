@@ -8,6 +8,13 @@ service mariadb start
 
 # 初始化(设置密码)
 sudo mysql_secure_installation
+
+# 开放 3306 端口
+firewall-cmd --zone=public --add-port=3306/tcp --permanent
+
+# 通过 IP 连接
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'PASSWORD' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
 ```
 
 ## 安装(Windows)
