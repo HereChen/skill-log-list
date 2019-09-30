@@ -10,7 +10,9 @@ service mariadb start
 sudo mysql_secure_installation
 
 # 开放 3306 端口
+# 参考 draft/elk.md
 firewall-cmd --zone=public --add-port=3306/tcp --permanent
+firewall-cmd --reload
 
 # 通过 IP 连接
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'PASSWORD' WITH GRANT OPTION;

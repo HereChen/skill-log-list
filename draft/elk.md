@@ -62,6 +62,8 @@ http.port: 9200
 ```conf
 # vim /etc/selinux/config
 SELINUX=disabled
+
+# 需要重启
 ```
 
 ```bash
