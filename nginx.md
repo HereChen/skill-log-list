@@ -2,13 +2,25 @@
 
 ## 安装
 
-### CentOS 在线安装
+### CentOS 安装
 
 ```bash
 yum install epel-release
 yum install nginx
+
+# 安装位置 /etc/nginx
+
+# 启动
 systemctl start nginx
+
+# 关闭
 systemctl stop nginx
+
+# 重启
+systemctl reload nginx
+
+# 开机启动
+systemctl enable nginx
 ```
 
 ### 问题
