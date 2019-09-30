@@ -27,4 +27,17 @@
 * docker 安装: `curl -sSL https://get.docker.com/ | sh`
 * 查看当前系统 IP: `ifconfig -a`
 * 安装 ifconfig(CentOS): `sudo yum install net-tools`
-* SSH 登录, `.ssh` 下有多个 rsa情况下用后者: `ssh root@host`, `ssh -o PubkeyAuthentication=no root@host`
+* SSH 登录, `.ssh` 下有多个 rsa 情况下用后者: `ssh root@host`, `ssh -o PubkeyAuthentication=no root@host`
+
+## 禁止 ping 响应 (禁止 ICMP 协议响应)
+
+```bash
+sudo vim /etc/sysctl.conf
+
+## disable
+# net.ipv4.icmp_echo_ignore_all=1
+## enable
+# net.ipv4.icmp_echo_ignore_all=0
+
+sudo sysctl -p
+```
