@@ -42,12 +42,16 @@ FLUSH PRIVILEGES;
     ```bash
     # 初始化, 会生成初始密码
     mysqld --initialize --user=mysql --console
+
     # 服务安装
     mysqld --install MySQL5.7.21
+
     # 服务启动
     net start MySQL5.7.21
+
     # 登录
     mysql -uroot -p密码
+
     # 密码变更
     set password for root@localhost=password('123456');
 
@@ -164,10 +168,18 @@ mysql -hlocalhost -p3306 -uroot -p
 ## command
 
 ```bash
-# 列出所有数据库
+# IP 登录
+mysql -uroot -p -h192.168.100.137
+```
+
+```sql
+-- 列出所有数据库
 show databases;
 
-# 创建数据库
+-- 列出表格
+show tables;
+
+-- 创建数据库
 CREATE DATABASE doc;
 ```
 
