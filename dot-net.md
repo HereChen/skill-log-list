@@ -1,6 +1,31 @@
-# .NET Core
+# .NET
 
-## 安装
+## .NET Core
+
+### quick start
+
+下载地址：<https://dotnet.microsoft.com/download>
+
+```bash
+# https://dotnet.microsoft.com/learn
+# web app
+dotnet new webApp -o myWebApp --no-https
+cd myWebApp
+dotnet run
+
+# console app
+dotnet new console -o myApp
+cd myApp
+dotnet run
+
+# web api
+dotnet new webapi -o TodoApi
+cd TodoApi
+dotnet run
+# https://localhost:5001/WeatherForecast 访问接口
+```
+
+### Ubuntu 安装
 
 ```bash
 # https://dotnet.microsoft.com/download/dotnet-core/3.0
@@ -15,7 +40,29 @@ sudo apt install dotnet-sdk-3.0
 dotnet --version
 ```
 
-## C#
+### 实时编译 Web App
+
+> [Razor file compilation in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.0)
+
+AspNet 变更页面内容后，在浏览器中刷新内容不会更新，需要增加以下依赖。
+
+1. 增加依赖
+
+    ```bash
+    dotnet add package Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation --version 3.0.0
+    ```
+
+2. `Startup.cs` 增加一行
+
+    ```diff
+    public void ConfigureServices(IServiceCollection services)
+    {
+      services.AddRazorPages();
+    +  services.AddControllersWithViews().AddRazorRuntimeCompilation();
+    }
+    ```
+
+## CSharp
 
 ### 利用基类方法传递参数
 
