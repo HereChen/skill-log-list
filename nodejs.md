@@ -66,7 +66,7 @@ sudo apt-get install -y nodejs
 
 ```bash
 # 安装 nvm
-wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
 
 # 安装 nodejs
 nvm install v8.12.0
