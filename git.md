@@ -230,9 +230,17 @@ git push
     sudo apt install keychain
     # zsh 下修改 vim ~/.zshrc
     vim ~/.bashrc
-    # keychain id_rsa id_dsa
+    # keychain id_rsa_github id_rsa_gitee
     # . ~/.keychain/`uname -n`-sh
+
+    source ~/.bashrc
     ```
+
+如果报错 `* Error: Problem adding; giving up` 或者类似 `Permissions 0755 for '/home/chen/.ssh/id_rsa' are too open.`，则更改文件夹下所有文件权限。
+
+```bash
+chmod -R 700 ~/.ssh
+```
 
 ### Git 别名
 
