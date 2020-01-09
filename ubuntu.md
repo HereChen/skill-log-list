@@ -91,6 +91,17 @@ sudo vi /edc/samba/smb.conf
 sudo service samba restart
 ```
 
+## 系统升级
+
+```bash
+# https://medium.com/@rockey5520/wsl-ubuntu-upgrade-to-disco-dingo-19-04-b4abff20452d
+sudo apt upgrade
+sudo do-release-upgrade
+# 此时提示修改 /etc/update-manager/release-upgrades Prompt = normal, 按照提示修改, 并再次执行
+sudo do-release-upgrade
+# 如果是 WSL, 安装完成后重启, 以管理员模式在 PowerShell 中执行 `Restart-Service LxssManager`
+```
+
 ## 镜像替换
 
 ```bash
