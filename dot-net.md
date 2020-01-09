@@ -36,7 +36,7 @@ sudo wget -q https://packages.microsoft.com/config/ubuntu/19.04/packages-microso
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt update
 sudo apt install apt-transport-https
-sudo apt install dotnet-sdk-3.0
+sudo apt install dotnet-sdk-3.1
 dotnet --version
 ```
 
