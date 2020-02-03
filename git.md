@@ -236,11 +236,13 @@ git push
     source ~/.bashrc
     ```
 
-如果报错 `* Error: Problem adding; giving up` 或者类似 `Permissions 0755 for '/home/chen/.ssh/id_rsa' are too open.`，则更改文件夹下所有文件权限。
+* 如果报错 `* Error: Problem adding; giving up` 或者类似 `Permissions 0755 for '/home/chen/.ssh/id_rsa' are too open.`，则更改文件夹下所有文件权限。
 
-```bash
-chmod -R 700 ~/.ssh
-```
+    ```bash
+    chmod -R 700 ~/.ssh
+    ```
+
+* WSL 在系统盘之外 git clone 出现各种问题（SSH 已添加成功，代码拉不下来），回到 wsl 的系统内则可以。
 
 ### Git 别名
 
