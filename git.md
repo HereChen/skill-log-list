@@ -177,11 +177,12 @@ git pull --rebase
 
 ### 修改历史 commit 信息
 
-1. 只修改最后一条: `git commit --amend`
-2. 修改多条(比如最后 3 条, 或倒数第 3 条)
+* 只修改最后一条: `git commit --amend`
+* 修改多条(比如最后 3 条, 或倒数第 3 条)
     * `git rebase -i HEAD~3`, 然后把要修改.
     * 把需要修改的 commit 前面的 `pick` 改为 `reword`, 保存退出.
     * 逐个修改 commit 信息.
+* 修改提交者的信息 <https://cloud.tencent.com/developer/article/1393449>
 
 ### `git pull --rebase` 冲突解决
 
