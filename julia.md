@@ -24,6 +24,7 @@ julia -version
 
 1. [Juno](https://junolab.org)
 2. [JuliaPro](https://juliacomputing.com/products/juliapro.html)
+3. [Jupyter](https://jupyter.org/install.html) `pip install jupyterlab -i https://pypi.douban.com/simple`
 
 ## 执行
 
