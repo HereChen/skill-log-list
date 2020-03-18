@@ -8,6 +8,7 @@
 * 解压缩: `tar -xzvf xxx.tar.gz`
 * 复制当前文件夹下所有文件: `cp -r * ../folder`
 * 复制文件内内容: `xclip -sel c < file`
+* 列出一级文件，并作排除：`tree -L 1 -I "draft|README.md"`
 
 ## Bash On Ubuntu On Windows 升级
 
