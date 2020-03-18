@@ -90,15 +90,15 @@ include("./basic-demo.jl")
 
 ```julia
 module MatrixDemo
-    using LinearAlgebra
+  using LinearAlgebra
 
-    function print()
-      println("\nMatrixDemo");
+  function print()
+    println("\nMatrixDemo");
 
-      A = [1 2 3; 4 1 6; 7 8 1];
-      println(det(A)) # 行列式
-      println(inv(A)) # 取逆矩阵
-    end
+    A = [1 2 3; 4 1 6; 7 8 1];
+    println(det(A)) # 行列式
+    println(inv(A)) # 取逆矩阵
+  end
 end
 ```
 
