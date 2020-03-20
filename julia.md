@@ -88,6 +88,44 @@ Pkg.gc()
 Pkg.add("Plots")
 ```
 
+### Project.toml 与 Manifest.toml
+
+一个 project 下面有两个文件：Project.toml 和 Manifest.toml。
+
+* Project.toml 用于描述项目信息及依赖。
+* Manifest.toml 由 Pkg 自动生成（无需手动编辑），包含依赖之间的关系，类似 npm 包管理中的 package-lock.json 文件。
+
+### Project.toml
+
+```toml
+# https://julialang.github.io/Pkg.jl/v1/toml-files/
+# 项目名
+name = "Example"
+# 唯一标识符
+uuid = "7876af07-990d-54b4-ab0e-23690620f79a"
+# 版本
+version = "1.2.5"
+
+# 依赖
+[deps]
+
+# 描述依赖的兼容限制
+[compat]
+```
+
+### 添加依赖到当前项目
+
+1. 创建 `Project.toml`
+2. 添加依赖
+
+    ```bash
+    export JULIA_LOAD_PATH=$PWD
+    # 添加依赖到当前项目
+    $ julia
+    # 按 ] 进入 Pkg
+    pkg> add Weave
+    ```
+
 ## 模块
 
 ```julia
