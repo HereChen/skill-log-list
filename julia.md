@@ -126,6 +126,14 @@ version = "1.2.5"
     pkg> add Weave
     ```
 
+### 已有工程初始化
+
+```bash
+# https://docs.julialang.org/en/v1.0/stdlib/Pkg/#Using-someone-else's-project-1
+pkg> activate .
+pkg> instantiate
+```
+
 ## 模块
 
 ```julia
