@@ -47,19 +47,6 @@ julia> include("C:\Users\chenl\.julia\packages\FFMPEG\9JQpZ\deps\build.jl")
 
 * 文件后缀 `.jl`。
 * Unicode 可以作为变量 `δ = √2`。
-* 添加、删除、更新包
-
-    ```julia
-    using Pkg
-    Pkg.add("Plots")
-    Pkg.update("Plots")
-    Pkg.rm("Plots")
-
-    # 安装失败重新安装。有时候下载依赖会失败，可以根据错误，将依赖中的包手动下载下来放入对应的文件夹（build 文件也可能需要手动下载）
-    Pkg.rm("Plots")
-    Pkg.gc()
-    Pkg.add("Plots")
-    ```
 
 ```julia
 # 一个简单的示例
@@ -78,6 +65,27 @@ println(x);
 ```bash
 # 终端中执行
 julia main.jl
+```
+
+## 包管理
+
+### Pkg
+
+```julia
+using Pkg
+# 查看已安装的包
+Pkg.status()
+# 添加
+Pkg.add("Plots")
+# 更新包
+Pkg.update("Plots")
+# 删除
+Pkg.rm("Plots")
+
+# 安装失败重新安装。有时候下载依赖会失败，可以根据错误，将依赖中的包手动下载下来放入对应的文件夹（build 文件也可能需要手动下载）
+Pkg.rm("Plots")
+Pkg.gc()
+Pkg.add("Plots")
 ```
 
 ## 模块
