@@ -104,11 +104,18 @@ Pkg.add("Plots")
 Pkg.update("Plots")
 # 删除
 Pkg.rm("Plots")
+# 执行测试
+Pkg.test()
 
 # 安装失败重新安装。有时候下载依赖会失败，可以根据错误，将依赖中的包手动下载下来放入对应的文件夹（build 文件也可能需要手动下载）
 Pkg.rm("Plots")
 Pkg.gc()
 Pkg.add("Plots")
+```
+
+```bash
+# 生成一个工程
+pkg> generate DemoProject
 ```
 
 ### Project.toml 与 Manifest.toml
