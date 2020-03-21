@@ -67,7 +67,7 @@ println(x);
 julia main.jl
 ```
 
-### 控制语句
+### 流程控制
 
 ```julia
 # https://docs.julialang.org/en/v1/manual/control-flow/
