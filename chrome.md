@@ -48,6 +48,8 @@ Sources -> Filesystem -> 添加文件夹. 在 Chrome 中编辑可保存到本地
 
 ### HTTPS 无效证书 `NET::ERR_CERT_AUTHORITY_INVALID`
 
+自签名证书：<https://gist.github.com/pgilad/63ddb94e0691eebd502deee207ff62bd>
+
 * 命令行启动忽略证书错误：`chrome.exe --ignore-certificate-errors`
 * 导入证书忽略证书错误：`chrome://settings/` => Manage certificates => Import... => 选择证书 => 选择 Trusted Root Certification Authorities
 * 手动点击忽略：在错误提示页面点击 `Proceed to localhost (unsafe)`，后续将不再提示错误。如果要复现错误，点击 URL 中的 `not secure/不安全`，弹框中有重启错误提示的操作。
