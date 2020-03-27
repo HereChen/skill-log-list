@@ -1,24 +1,26 @@
-# Chrome (DevTools)
+# Chrome
+
+## DevTools
 
 - 各个功能项可以拖动改变顺序
 - Ctrl + ]/[ 可以切换功能页
 - 文本编辑, 地址栏输入 `data:text/html, <html contenteditable>`
 
-## Settings
+### Settings
 
 - Prefference > Console > Show timestamps: 勾选后 Console 中输出, 包含输出时间
 
-## Elements
+### Elements
 
 - 选中元素，按 h 键，可以切换显示隐藏状态
 
-## Sources
+### Sources
 
 - Ctrl + D 连续多选
 - Ctrl + P 打开文件
 - Ctrl + Shift + P 打开 CSS/JS 后，定位 CSS 选择器/JS 函数
 
-## Network
+### Network
 
 - 蓝线: HTML加载解析完毕
 - 红线: css、js、图片等资源下载完毕
@@ -26,11 +28,11 @@
 - 排除特定文件格式响应信息： 使用负号排除图片，filter 中输入 `-png -js` 可排除 png 和 js
 - 清除 Application Cache： chrome://appcache-internals/
 
-## Console
+### Console
 
 - Ctrl + L 清空 Console
 
-## Tips
+### Tips
 
 **离线安装扩展**
 
@@ -41,6 +43,14 @@
 Sources -> Filesystem -> 添加文件夹. 在 Chrome 中编辑可保存到本地. 编写简单无打包工具的一个用可采用此方法, 方便预览和调式.
 
 - [Edit Files With Workspaces](https://developers.google.com/web/tools/chrome-devtools/workspaces/)
+
+## 应用
+
+### HTTPS 无效证书 `NET::ERR_CERT_AUTHORITY_INVALID`
+
+* 命令行启动忽略证书错误：`chrome.exe --ignore-certificate-errors`
+* 导入证书忽略证书错误：`chrome://settings/` => Manage certificates => Import... => 选择证书 => 选择 Trusted Root Certification Authorities
+* 手动点击忽略：在错误提示页面点击 `Proceed to localhost (unsafe)`，后续将不再提示错误。如果要复现错误，点击 URL 中的 `not secure/不安全`，弹框中有重启错误提示的操作。
 
 ## 参考/资源
 
