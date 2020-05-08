@@ -97,6 +97,13 @@ sudo vi /edc/samba/smb.conf
 sudo service samba restart
 ```
 
+### 代理设置
+
+```bash
+export http_proxy=http://127.0.0.1:1000
+export https_proxy=http://127.0.0.1:1000
+```
+
 ## 系统升级
 
 ```bash
