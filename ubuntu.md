@@ -108,6 +108,8 @@ sudo do-release-upgrade
 sudo vim /etc/apt/sources.list
 # us.archive.ubuntu.com 替换为 mirrors.aliyun.com
 # :%s/us\.archive\.ubuntu\.com/mirrors\.aliyun\.com/g
+# security.ubuntu.com 替换为 mirrors.aliyun.com
+# :%s/security\.ubuntu\.com/mirrors\.aliyun\.com/g
 
 # http://mirrors.aliyun.com/ubuntu/
 # http://mirrors.163.com/ubuntu/
