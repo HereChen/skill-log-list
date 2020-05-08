@@ -28,3 +28,12 @@ update-alternatives --config java
 ```bash
 yum install java-1.8.0-openjdk
 ```
+
+## Command
+
+### 代理设置
+
+```bash
+# java 依赖代理
+export JAVA_OPTS="$JAVA_OPTS -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8080"
+```
