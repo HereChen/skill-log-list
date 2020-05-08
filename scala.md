@@ -5,6 +5,7 @@
 ## 安装（Ubuntu/Debian）
 
 ```bash
+# https://docs.scala-lang.org/getting-started/sbt-track/getting-started-with-scala-and-sbt-on-the-command-line.html
 # https://gist.github.com/Frozenfire92/3627e38dc47ca581d6d024c14c1cf4a9
 
 ## java
