@@ -30,6 +30,12 @@
 sudo apt update
 sudo apt upgrade
 
+# deb 软件安装
+sudo dpkg -i software-name.deb
+
+# 软禁删除
+sudo apt remove software-name
+
 # command alias
 alias ll='ls -la'
 
