@@ -27,3 +27,33 @@ sudo apt-get install sbt
 
 sbt --version
 ```
+
+## Hello World
+
+> <https://docs.scala-lang.org/getting-started/sbt-track/getting-started-with-scala-and-sbt-on-the-command-line.html>
+
+```bash
+sbt new scala/hello-world.g8
+cd hello-world
+sbt
+~run
+```
+
+**备注** 如果执行 sbt 下载失败
+
+> <https://blog.csdn.net/binbinczsohu/article/details/105289456>
+
+```bash
+cd ~/.sbt
+touch repositories
+vim repositories
+# 填入下面的内容
+```
+
+```
+[repositories]
+local
+huaweicloud-maven: https://repo.huaweicloud.com/repository/maven/
+maven-central: https://repo1.maven.org/maven2/
+sbt-plugin-repo: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]
+```
