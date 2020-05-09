@@ -61,3 +61,36 @@ sbt-plugin-repo: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases, [organ
 
 * <https://blog.csdn.net/binbinczsohu/article/details/105289456>
 * <https://help.aliyun.com/document_detail/102512.html>
+
+## Demo (Spark)
+
+> <https://spark.apache.org/docs/latest/quick-start.html>
+
+```scala
+// README.md 中 a 和 b 的行数
+import org.apache.spark.sql.SparkSession
+
+object Main extends App {
+  val logFile = "/home/chen/practice/scala/README.md" // Should be some file on your system
+  val spark = SparkSession
+    .builder
+    .appName("Simple Application")
+    .config("spark.master", "local")
+    .getOrCreate()
+  val logData = spark.read.textFile(logFile).cache()
+  val numAs = logData.filter(line => line.contains("a")).count()
+  val numBs = logData.filter(line => line.contains("b")).count()
+  println(s"Lines with a: $numAs, Lines with b: $numBs")
+  spark.stop()
+}
+```
+
+```scala
+scalaVersion := "2.12.10"
+name := "hello-world"
+organization := "ch.epfl.scala"
+version := "1.0"
+libraryDependencies ++= Seq(
+  "org.apache.spark" %% "spark-sql" % "2.4.5"
+)
+```
