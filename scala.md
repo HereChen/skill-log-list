@@ -41,8 +41,6 @@ sbt
 
 **备注** 如果执行 sbt 下载失败
 
-> <https://blog.csdn.net/binbinczsohu/article/details/105289456>
-
 ```bash
 cd ~/.sbt
 touch repositories
@@ -53,7 +51,13 @@ vim repositories
 ```
 [repositories]
 local
+aliyun: https://maven.aliyun.com/repository/public
 huaweicloud-maven: https://repo.huaweicloud.com/repository/maven/
+jcenter: https://jcenter.bintray.com
 maven-central: https://repo1.maven.org/maven2/
+typesafe: https://repo.typesafe.com/typesafe/ivy-releases/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext], bootOnly
 sbt-plugin-repo: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]
 ```
+
+* <https://blog.csdn.net/binbinczsohu/article/details/105289456>
+* <https://help.aliyun.com/document_detail/102512.html>
