@@ -94,3 +94,14 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-sql" % "2.4.5"
 )
 ```
+
+## sbt
+
+### command
+
+```bash
+run         # 启动工程
+~run        # 启动工程并检测代码变更
+package     # 打包
+reload      # 刷新
+```
