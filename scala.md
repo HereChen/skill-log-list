@@ -97,6 +97,10 @@ libraryDependencies ++= Seq(
 
 ## sbt
 
+```bash
+sbt console # console 模式，可进行交互式计算
+```
+
 ### command
 
 ```bash
