@@ -15,10 +15,12 @@ sbt
 ```
 
 ```bash
-console     # console 模式，可进行交互式计算
-run         # 启动工程
-~run        # 启动工程并检测代码变更
-package     # 打包
-reload      # 刷新代码(进入交互命令，不会自动使用最新的代码)
-makePom     # 生成 pom 文件
+console               # console 模式，可进行交互式计算
+run                   # 启动工程
+~run                  # 启动工程并检测代码变更
+package               # 打包
+reload                # 刷新代码(进入交互命令，不会自动使用最新的代码)
+makePom               # 生成 pom 文件
+runMain example.Main  # 执行指定的类，后面可空格接参数
+show discoveredMainClasses
 ```
