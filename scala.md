@@ -117,3 +117,52 @@ package     # 打包
 reload      # 刷新代码(进入交互命令，不会自动使用最新的代码)
 makePom     # 生成 pom 文件
 ```
+
+## Maven
+
+example <https://github.com/jesperdj/scala-maven-example>，依赖 `scala-maven-plugin` 和 `maven-assembly-plugin` 打包（包含依赖）。
+
+```xml
+<!-- 只包含 build 部分 -->
+<build>
+  <plugins>
+    <!-- Scala support -->
+    <plugin>
+      <groupId>net.alchim31.maven</groupId>
+      <artifactId>scala-maven-plugin</artifactId>
+      <version>4.3.1</version>
+      <executions>
+        <execution>
+          <goals>
+            <goal>compile</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
+    <!-- scala assembly -->
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-assembly-plugin</artifactId>
+      <version>2.4</version>
+      <configuration>
+        <descriptorRefs>
+          <descriptorRef>jar-with-dependencies</descriptorRef>
+        </descriptorRefs>
+        <archive>
+          <manifest>
+            <mainClass>Main</mainClass>
+          </manifest>
+        </archive>
+      </configuration>
+      <executions>
+          <execution>
+              <phase>package</phase>
+              <goals>
+                  <goal>single</goal>
+              </goals>
+          </execution>
+      </executions>
+    </plugin>
+  </plugins>
+</build>
+```
