@@ -58,6 +58,13 @@ sudo apt install docker-ce docker-ce-cli containerd.io
 sudo docker run hello-world
 ```
 
+```bash
+# 备用，使用 aliyun (或直接更改 /etc/apt/sources.list)
+# https://blog.csdn.net/xie1xiao1jun/article/details/79413436
+curl -fsSL http://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/ubuntu $(lsb_release -cs) stable"
+```
+
 ## 基本命令
 
 ```bash
