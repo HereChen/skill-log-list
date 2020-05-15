@@ -178,7 +178,7 @@ docker-compose run <container name> <command>
 
 ## 镜像设置
 
-向 `/etc/docker/daemon.json` 文件添加如下内容
+向 `/etc/docker/daemon.json` 文件添加如下内容（备用：`https://registry.docker-cn.com`）
 
 ```json
 {
