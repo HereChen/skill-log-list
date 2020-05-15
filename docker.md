@@ -178,11 +178,11 @@ docker-compose run <container name> <command>
 
 ## 镜像设置
 
-向 `/etc/docker/daemon.json` 文件添加如下内容（备用：`https://registry.docker-cn.com`）
+向 `/etc/docker/daemon.json` 文件添加如下内容
 
 ```json
 {
-  "registry-mirrors": ["https://reg-mirror.qiniu.com"]
+  "registry-mirrors": ["http://hub-mirror.c.163.com"]
 }
 ```
 
@@ -194,6 +194,12 @@ docker-compose run <container name> <command>
 systemctl stop docker
 systemctl start docker
 ```
+
+备用：
+
+* `https://registry.docker-cn.com`
+* `http://hub-mirror.c.163.com`
+* `https://reg-mirror.qiniu.com`
 
 ## 问题
 
