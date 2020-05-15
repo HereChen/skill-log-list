@@ -208,4 +208,5 @@ systemctl start docker
 
 ## 资源
 
-1. [yeasy/docker_practice](https://github.com/yeasy/docker_practice)
+* [yeasy/docker_practice](https://github.com/yeasy/docker_practice)
+* [CentOS7-Docker 配置国内镜像源](https://www.cnblogs.com/reasonzzy/p/11127359.html)
