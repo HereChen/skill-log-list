@@ -184,6 +184,7 @@ em++ -std=c++11 --bind -o export_cpp_method.js export_cpp_method.cpp
 * [Build your own WebAssembly Compiler, Colin Eberhardt, 2019-05-17](https://blog.scottlogic.com/2019/05/17/webassembly-compiler.html)
 * [前端核心代码保护技术面面观](https://zhuanlan.zhihu.com/p/61651310)
 * [Compiling C to WebAssembly without Emscripten, Surma, 2019-05-28](https://dassur.ma/things/c-to-webassembly/)
+* [WebAssembly Is Fast: A Real-World Benchmark of WebAssembly vs. ES6](https://medium.com/@torch2424/webassembly-is-fast-a-real-world-benchmark-of-webassembly-vs-es6-d85a23f8e193)
 
 ## Appendix
 
