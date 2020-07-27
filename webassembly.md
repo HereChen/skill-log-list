@@ -170,14 +170,30 @@ em++ -std=c++11 --bind -o export_cpp_method.js export_cpp_method.cpp
 </html>
 ```
 
+## Tips
+
+### 加载后回调/`onRuntimeInitialized`
+
+> <https://emscripten.org/docs/getting_started/FAQ.html>
+
+* 一种是提前定义 `onRuntimeInitialized`，见上面的 Example。
+* 通过 Promise 方式回调。编译时加参数 `-s MODULARIZE=1 -s 'EXPORT_NAME="createMyModule"'`，可参考 [squoosh/codecs/mozjpeg_enc/build.sh](https://github.com/GoogleChromeLabs/squoosh/blob/ff7dc2c4cf0f080fef7e172c4b0ff6f4a1dd7e63/codecs/mozjpeg_enc/build.sh#L33)。
+
+```js
+createMyModule(/* optional default settings */).then(function(Module) {
+  // Module 是暴露的模块，这里回调
+});
+```
+
 ## Use Case
 
-1. [fastq.bio, How We Used WebAssembly To Speed Up Our Web App By 20X (Case Study)](https://www.smashingmagazine.com/2019/04/webassembly-speed-web-app/)
-2. [Figma, WebAssembly cut Figma's load time by 3x](https://www.figma.com/blog/webassembly-cut-figmas-load-time-by-3x/)
-3. [brion/ogv.js](https://github.com/brion/ogv.js): 音视频播放器.
-4. [Web端H.265播放器研发解密, 淘宝技术](https://mp.weixin.qq.com/s/ajLFM8q-4-2hxj-M_ChGdg)
-5. [ColinEberhardt/wasm-mandelbrot](https://github.com/ColinEberhardt/wasm-mandelbrot) 分形图几种实现方式的对比。
-6. [WebAssembly at eBay: A Real-World Use Case](https://tech.ebayinc.com/engineering/webassembly-at-ebay-a-real-world-use-case/)
+* [fastq.bio, How We Used WebAssembly To Speed Up Our Web App By 20X (Case Study)](https://www.smashingmagazine.com/2019/04/webassembly-speed-web-app/)
+* [Figma, WebAssembly cut Figma's load time by 3x](https://www.figma.com/blog/webassembly-cut-figmas-load-time-by-3x/)
+* [brion/ogv.js](https://github.com/brion/ogv.js): 音视频播放器.
+* [Web端H.265播放器研发解密, 淘宝技术](https://mp.weixin.qq.com/s/ajLFM8q-4-2hxj-M_ChGdg)
+* [ColinEberhardt/wasm-mandelbrot](https://github.com/ColinEberhardt/wasm-mandelbrot) 分形图几种实现方式的对比。
+* [WebAssembly at eBay: A Real-World Use Case](https://tech.ebayinc.com/engineering/webassembly-at-ebay-a-real-world-use-case/)
+* [GoogleChromeLabs/squoosh](https://github.com/GoogleChromeLabs/squoosh) 图片压缩。
 
 ## Readings
 
