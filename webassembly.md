@@ -172,6 +172,20 @@ em++ -std=c++11 --bind -o export_cpp_method.js export_cpp_method.cpp
 
 ## Tips
 
+### 支持 `Content-Type: application/wasm`
+
+emscripten 1.39.20 生成的 JS。
+
+* [http-server](https://github.com/http-party/http-server) 会报错，响应的 header 是 `content-Type: application/wasm; charset=utf8`。正常的应是 `Content-Type: application/wasm`。
+  
+  ```bash
+  # 需要增加类型支持
+  # https://github.com/http-party/http-server/pull/564
+  http-server --mime='{ "application/wasm": [ "wasm" ] }' .
+  ```
+
+* [webpack-dev-server](https://github.com/webpack/webpack-dev-server) 支持。
+
 ### 加载后回调/`onRuntimeInitialized`
 
 > <https://emscripten.org/docs/getting_started/FAQ.html>
