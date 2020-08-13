@@ -211,6 +211,7 @@ createMyModule(/* optional default settings */).then(function(Module) {
 
 ## Readings
 
+* [WebAssembly如何演进成为“浏览器第二编程语言”？](https://mp.weixin.qq.com/s/-Yp3X_oR30ZGRIVjyChNTg)
 * [Build your own WebAssembly Compiler, Colin Eberhardt, 2019-05-17](https://blog.scottlogic.com/2019/05/17/webassembly-compiler.html)
 * [前端核心代码保护技术面面观](https://zhuanlan.zhihu.com/p/61651310)
 * [Compiling C to WebAssembly without Emscripten, Surma, 2019-05-28](https://dassur.ma/things/c-to-webassembly/)
