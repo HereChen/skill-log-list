@@ -23,4 +23,5 @@ reload                # 刷新代码(进入交互命令，不会自动使用最�
 makePom               # 生成 pom 文件
 runMain example.Main  # 执行指定的类，后面可空格接参数
 show discoveredMainClasses
+test                  # 执行测试用例
 ```
