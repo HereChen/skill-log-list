@@ -148,3 +148,11 @@ example <https://github.com/jesperdj/scala-maven-example>，依赖 `scala-maven-
   </plugins>
 </build>
 ```
+
+## Tips
+
+### IntelliJ IDEA
+
+* 安装 Scala 插件。
+* 配置 `.sbt/repositories` 文件。
+* sbt shell, loading sbt plugins 报错 `wrong checksum` 时，手动下载 jar 包替换。
