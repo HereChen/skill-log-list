@@ -59,6 +59,7 @@ typesafe: https://repo.typesafe.com/typesafe/ivy-releases/, [organization]/[modu
 sbt-plugin-repo: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]
 ```
 
+* [Proxy Repositories](https://www.scala-sbt.org/1.x/docs/Proxy-Repositories.html)
 * <https://blog.csdn.net/binbinczsohu/article/details/105289456>
 * <https://help.aliyun.com/document_detail/102512.html>
 
