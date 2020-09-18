@@ -24,4 +24,5 @@ makePom               # 生成 pom 文件
 runMain example.Main  # 执行指定的类，后面可空格接参数
 show discoveredMainClasses
 test                  # 执行测试用例
+projects              # 查看当前工程所有子项目
 ```
