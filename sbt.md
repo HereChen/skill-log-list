@@ -24,6 +24,7 @@ runMain example.Main  # 执行指定的类，后面可空格接参数
 show discoveredMainClasses
 test                  # 执行测试用例
 projects              # 查看当前工程所有子项目
+project projectName   # 工程切换
 clean                 # 清除 target
 compile               # 编译 main sources
 package               # 打包
