@@ -28,4 +28,5 @@ project projectName   # 工程切换
 clean                 # 清除 target
 compile               # 编译 main sources
 package               # 打包
+update                # 更新依赖
 ```
