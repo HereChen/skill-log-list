@@ -34,22 +34,22 @@ DIST_FOLDER=dist
 all: clean html pdf mobi epub
 
 html: _dist_dir
-	gitbook build . ./${DIST_FOLDER}/html
-	# FIXME: can not delete
-	rm -rf ./${DIST_FOLDER}/html/{Makefile,.editorconfig,.gitignore}
+  gitbook build . ./${DIST_FOLDER}/html
+  # FIXME: can not delete
+  rm -rf ./${DIST_FOLDER}/html/{Makefile,.editorconfig,.gitignore}
 
 pdf: _dist_dir
-	gitbook pdf . ./${DIST_FOLDER}/${PROJNAME}.pdf
+  gitbook pdf . ./${DIST_FOLDER}/${PROJNAME}.pdf
 
 epub: _dist_dir
-	gitbook epub . ./${DIST_FOLDER}/${PROJNAME}.epub
+  gitbook epub . ./${DIST_FOLDER}/${PROJNAME}.epub
 
 mobi: _dist_dir
-	gitbook mobi . ./${DIST_FOLDER}/${PROJNAME}.mobi
+  gitbook mobi . ./${DIST_FOLDER}/${PROJNAME}.mobi
 
 clean:
-	rm -rf ${DIST_FOLDER}
+  rm -rf ${DIST_FOLDER}
 
 _dist_dir:
-	mkdir -p ${DIST_FOLDER}
+  mkdir -p ${DIST_FOLDER}
 ```
