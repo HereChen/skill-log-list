@@ -305,6 +305,21 @@ git submodule foreach git reset --hard
 git submodule foreach --recursive git reset --hard
 ```
 
+## 添加两个源
+
+```bash
+git remote add origin 仓库1
+git remote add repo2 仓库2
+git remote -v
+
+# 从仓库2 pull
+git pull repo2
+# push 到仓库1
+git push origin
+# push 到仓库2
+git push repo2
+```
+
 ## 参考资料
 
 * [https://github.com/progit/progit](https://github.com/progit/progit)

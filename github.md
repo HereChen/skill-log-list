@@ -14,11 +14,3 @@
 3. pull request
 
 [Syncing a fork](https://help.github.com/articles/syncing-a-fork/)
-
-```bash
-git clone git@****.git
-git add remote upstream git@****.git
-git fetch upstream
-git checkout master
-git git merge upstream/master
-```
