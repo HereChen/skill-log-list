@@ -320,6 +320,18 @@ git push origin
 git push repo2
 ```
 
+### 账户密码缓存
+
+应用场景：通过 http 或 https clone 的仓库，每次 pull 和 push 都需要输入账户，通过缓存可以避免频繁输入。
+
+```bash
+# https://stackoverflow.com/questions/34400272/visual-studio-code-always-asking-for-git-credentials/34627954#34627954
+# 缓存
+git config --global credential.helper cache
+# 或者添加缓存的时间
+git config --global credential.helper 'cache --timeout=3600'
+```
+
 ## 参考资料
 
 * [https://github.com/progit/progit](https://github.com/progit/progit)
