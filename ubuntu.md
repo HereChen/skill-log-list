@@ -130,6 +130,8 @@ sudo vim /etc/apt/sources.list
 # http://mirrors.tuna.tsinghua.edu.cn
 ```
 
+或在 [repository file generator](https://mirrors.ustc.edu.cn/repogen/) 获得生成的 sources.list 文件内容。
+
 ## 桌面版启用 SSH 登录
 
 如果在虚拟机中安装 Ubuntu 桌面版，并且需要交换文件，启用 SSH 登录后，就可以通过 FileZilla 这类工具上传和下载文件，从而实现和虚拟机内的文件交换。
