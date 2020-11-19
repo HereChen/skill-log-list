@@ -2,6 +2,27 @@
 
 > <https://www.tensorflow.org> An end-to-end open source machine learning platform.
 
+## 安装
+
+```bash
+sudo apt install python3
+sudo apt install python3-pip
+
+sudo pip install -i https://mirrors.aliyun.com/pypi/simple tensorflow
+sudo pip install -i https://mirrors.aliyun.com/pypi/simple tensorflow-cpu
+```
+
+demo
+
+```python
+# https://github.com/tensorflow/tensorflow#try-your-first-tensorflow-program
+import tensorflow as tf
+
+tf.add(1, 2).numpy()
+hello = tf.constant('Hello, TensorFlow!')
+hello.numpy()
+```
+
 ## Docker
 
 **安装方式1: 从 `hub.docker.com` 安装** 默认方式安装
