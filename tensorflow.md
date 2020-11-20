@@ -75,3 +75,26 @@ docker run -it -p 8888:8888 tensorflow/tensorflow
 # 查看 tensorflow 版本
 pip list | grep tensorflow
 ```
+
+## Tensorflow Serving
+
+> <https://tensorflow.google.cn/tfx/serving/docker>
+
+```bash
+# docker 安装
+docker pull tensorflow/serving
+
+# 下载 demo
+git clone https://github.com/tensorflow/serving
+TESTDATA="$(pwd)/serving/tensorflow_serving/servables/tensorflow/testdata"
+
+# docker 启用服务 （让模型可以通过 REST API 访问）
+docker run -t --rm -p 8501:8501 \
+    -v "$TESTDATA/saved_model_half_plus_two_cpu:/models/half_plus_two" \
+    -e MODEL_NAME=half_plus_two \
+    tensorflow/serving &
+
+# 测试接口
+curl -d '{"instances": [1.0, 2.0, 5.0]}' \
+    -X POST http://localhost:8501/v1/models/half_plus_two:predict
+```
