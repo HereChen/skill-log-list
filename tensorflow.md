@@ -98,3 +98,11 @@ docker run -t --rm -p 8501:8501 \
 curl -d '{"instances": [1.0, 2.0, 5.0]}' \
     -X POST http://localhost:8501/v1/models/half_plus_two:predict
 ```
+
+```bash
+# my model
+# 模型路径：/home/chen/workspace/tensorflow-my-model/machin_learning_demo_model/1
+sudo docker run -p 8501:8501 \
+  --mount type=bind,source=/home/chen/workspace/tensorflow-my-model/machin_learning_demo_model,target=/models/machin_learning_demo_model \
+  -e MODEL_NAME=machin_learning_demo_model -t tensorflow/serving &
+```
