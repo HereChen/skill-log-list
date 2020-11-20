@@ -195,8 +195,9 @@ systemctl stop docker
 systemctl start docker
 ```
 
-备用：
+备用镜像：
 
+* `https://docker.mirrors.ustc.edu.cn`
 * `https://registry.docker-cn.com`
 * `http://hub-mirror.c.163.com`
 * `https://reg-mirror.qiniu.com`
