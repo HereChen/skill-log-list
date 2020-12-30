@@ -9,6 +9,15 @@ curl https://sh.rustup.rs -sSf | sh
 # demo
 cargo new hello_world
 cargo run
+
+# version
+rustc --version
+
+# upgrade
+rustup update
+
+# uninstall
+rustup self uninstall
 ```
 
 ## Cargo (dependency manager and build tool)
