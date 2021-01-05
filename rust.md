@@ -80,4 +80,18 @@ let x = 5;
 println!("x 1: {}", x);
 let x = x + 1;
 println!("x 2: {}", x);
+
+/*
+ * data types: scalar types, compound types
+ *
+ * scalar types: integers, floating-point numbers, Booleans, and characters.
+ * Integer Types: i8/u8, i16/u16, i32/u32, i64/u64, i128/u128, isize/usize
+ * Floating-Point Types: f32, f64
+ * The Boolean Type: bool
+ * The Character Type: char
+ *
+ * compound types: tuples and array
+ * The Tuple Type: `let tup: (i32, f64, u8) = (500, 6.4, 1);`
+ * The Array Type: `let a: [i32; 5] = [1, 2, 3, 4, 5];`
+ */
 ```
