@@ -4,7 +4,13 @@
 
 ## 安装
 
+> <https://julialang.org/downloads/platform/>
+
 ```bash
+## Debian/Ubuntu Linux
+sudo apt install julia
+
+## manual install
 cd /opt
 # https://subscription.packtpub.com/book/application_development/9781788998369/1/ch01lvl1sec12/installing-julia-from-binaries
 # https://blog.simos.info/learning-the-julia-computer-language-on-ubuntu/
