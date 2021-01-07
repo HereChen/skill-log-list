@@ -11,7 +11,7 @@ cargo new hello_world
 cargo run
 ```
 
-## Basic Command
+## Rust Commands
 
 ```bash
 # version
@@ -65,22 +65,34 @@ cargo update
 ## Rust-Lang
 
 ```rust
-// variables, mutability, constants
+/*
+ * variables, mutability, constants
+ */
 let foo = 5; // immutable
 let mut bar = 5; // mutable
 const MAX_POINTS: u32 = 100_000; // constants
+```
 
-// println!
+```rust
+/*
+ * println!
+ */
 let x = 5;
 let y = 10;
 println!("x = {} and y = {}", x, y);
+```
 
-// shadowing
+```rust
+/*
+ * shadowing
+ */
 let x = 5;
 println!("x 1: {}", x);
 let x = x + 1;
 println!("x 2: {}", x);
+```
 
+```rust
 /*
  * data types: scalar types, compound types
  *
@@ -94,4 +106,64 @@ println!("x 2: {}", x);
  * The Tuple Type: `let tup: (i32, f64, u8) = (500, 6.4, 1);`
  * The Array Type: `let a: [i32; 5] = [1, 2, 3, 4, 5];`
  */
+```
+
+```rust
+/*
+ * functions
+ */
+fn plus_one(x: i32) -> i32 {
+    x + 1
+}
+```
+
+```rust
+/*
+ * comments
+ */
+// This is a single line comment.
+```
+
+```rust
+/*
+ * control flow
+ * if, loop, while, for
+ */
+// if
+if number < 5 {
+    println!("condition was true");
+} else {
+    println!("condition was false");
+}
+
+// if in a let statement
+let condition = true;
+let number = if condition { 5 } else { 6 };
+
+// loop
+loop {
+    println!("again!");
+}
+
+// return value from loop
+let mut counter = 0;
+let result = loop {
+    counter += 1;
+    if counter == 10 {
+        break counter * 2;
+    }
+};
+
+// while
+let mut number = 3;
+while number != 0 {
+    println!("{}!", number);
+    number -= 1;
+}
+
+// for
+let a = [10, 20, 30, 40, 50];
+for element in a.iter() {
+    println!("the value is: {}", element);
+}
 ```
