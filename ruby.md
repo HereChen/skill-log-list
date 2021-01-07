@@ -1,12 +1,3 @@
-puts "a string #{viarble}"
+# Ruby
 
-puts "a string #{viarble}" unless true
-
-string.downcase!
-
-string = gets.chomp
-
-if user_input.include? "c"
-   
-	user_input.gsub!(/c/,"th")
-end
+ > <https://www.ruby-lang.org>
