@@ -167,3 +167,52 @@ for element in a.iter() {
     println!("the value is: {}", element);
 }
 ```
+
+```rust
+/*
+ * ownership
+ * 有所有权的变量，当该变量不再需要时，会释放对应的内存
+ */
+// only copy stack data, s1 move to s2 (take ownership)
+let s1 = String::from("hello");
+let s2 = s1;
+
+// s1 is invalid，因为 s2 获取了数据内存的所有权，s1 被回收
+println!("{}, world!", s1);
+
+// copy stack and heap data
+let s1 = String::from("hello");
+let s2 = s1.clone();
+
+println!("s1 = {}, s2 = {}", s1, s2);
+
+// references (does not have ownership )
+fn main() {
+    let s1 = String::from("hello");
+    // &s1 reference s1
+    let len = calculate_length(&s1); // calculate_length borrowing s1
+    println!("The length of '{}' is {}.", s1, len);
+}
+
+fn calculate_length(s: &String) -> usize {
+    s.len()
+}
+
+// mutable references (does not have ownership)
+fn main() {
+    let mut s = String::from("hello");
+    change(&mut s);
+}
+
+fn change(some_string: &mut String) {
+    some_string.push_str(", world");
+}
+
+// slice (does not have ownership)
+let s = String::from("hello");
+
+let len = s.len();
+
+let slice = &s[0..len];
+let slice = &s[..];
+```
