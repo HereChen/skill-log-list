@@ -216,3 +216,81 @@ let len = s.len();
 let slice = &s[0..len];
 let slice = &s[..];
 ```
+
+```rust
+/*
+ * structs
+ */
+// structs
+struct User {
+    username: String,
+    email: String,
+    sign_in_count: u64,
+    active: bool,
+}
+
+let user1 = User {
+    email: String::from("someone@example.com"),
+    username: String::from("someusername123"),
+    active: true,
+    sign_in_count: 1,
+};
+
+// ..
+let user2 = User {
+    email: String::from("another@example.com"),
+    username: String::from("anotherusername567"),
+    ..user1
+};
+
+// tuple structs
+struct Color(i32, i32, i32);
+struct Point(i32, i32, i32);
+
+let black = Color(0, 0, 0);
+let origin = Point(0, 0, 0);
+
+// pringt struct
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
+/*
+ * methods
+ * their first parameter is always self
+ */
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
+impl Rectangle {
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
+}
+
+/**
+ * associated functions: Rectangle::square(3)
+ * > they don’t have an instance of the struct to work with.
+ */ 
+impl Rectangle {
+    fn square(size: u32) -> Rectangle {
+        Rectangle {
+            width: size,
+            height: size,
+        }
+    }
+}
+
+// multiple impl Blocks
+impl Rectangle {
+    fn area(&self) {}
+}
+impl Rectangle {
+    fn can_hold(&self) {}
+}
+```
