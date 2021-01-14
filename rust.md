@@ -294,3 +294,66 @@ impl Rectangle {
     fn can_hold(&self) {}
 }
 ```
+
+```rust
+/*
+ * enum
+ * https://doc.rust-lang.org/stable/book/ch06-01-defining-an-enum.html#defining-an-enum
+ */
+enum IpAddrKind {
+    V4,
+    V6,
+}
+
+let four = IpAddrKind::V4;
+let six = IpAddrKind::V6;
+fn route(ip_kind: IpAddrKind) {}
+
+// with type
+enum Message {
+    Quit,
+    Move { x: i32, y: i32 },
+    Write(String),
+    ChangeColor(i32, i32, i32),
+}
+
+impl Message {
+    fn call(&self) {
+        // method body would be defined here
+    }
+}
+
+let m = Message::Write(String::from("hello"));
+m.call();
+
+// option
+// https://doc.rust-lang.org/stable/book/ch06-01-defining-an-enum.html#the-option-enum-and-its-advantages-over-null-values
+enum Option<T> {
+    Some(T),
+    None,
+}
+
+fn main() {
+    let some_number = Some(5);
+    let some_string = Some("a string");
+
+    let absent_number: Option<i32> = None;
+}
+
+// match
+enum Coin {
+    Penny,
+    Nickel,
+    Dime,
+    Quarter,
+}
+
+fn value_in_cents(coin: Coin) -> u8 {
+    match coin {
+        Coin::Penny => 1,
+        Coin::Nickel => 5,
+        Coin::Dime => 10,
+        Coin::Quarter => 25,
+    }
+}
+```
