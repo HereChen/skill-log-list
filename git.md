@@ -332,6 +332,7 @@ git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=3600'
 ```
 
-## 参考资料
+## 阅读
 
-* [https://github.com/progit/progit](https://github.com/progit/progit)
+* [progit/progit](https://github.com/progit/progit)
+* [git-tips/tips](https://github.com/git-tips/tips)
